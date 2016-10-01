@@ -1,0 +1,19 @@
+{
+  "author": {
+    "name": "Colin Meinke",
+    "email": "hello@colinmeinke.com",
+    "url": "www.colinmeinke.com"
+  },
+  "description": "Wilderness docs",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "wilderness-docs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.0"
+}
