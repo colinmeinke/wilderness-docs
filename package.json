@@ -6,6 +6,7 @@
   },
   "description": "Wilderness docs",
   "dependencies": {
+    "glamorous": "^4.1.2",
     "next": "^3.0.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
