@@ -1,5 +1,5 @@
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -9,9 +9,9 @@ export default () => (
     </Title>
 
     <p>
-      Creates a <Link href="/api/definitions#timeline"><a>Timeline</a></Link>
-      {' '} when passed one or more {' '}
-      <Link href="/api/definitions#shape"><a>Shape</a></Link> or array.
+      Creates a <Link href="/api/definitions#timeline">Timeline</Link> when
+      passed one or more <Link href="/api/definitions#shape">Shape</Link> or
+      array.
     </p>
 
     <pre>{`
@@ -107,7 +107,7 @@ export default () => (
       </li>
       <li>
         <code>middleware</code> (optional) is an array of {' '}
-        <Link href="/advanced/middleware"><a>Middleware</a></Link>.
+        <Link href="/advanced/middleware">Middleware</Link>.
       </li>
     </ul>
 

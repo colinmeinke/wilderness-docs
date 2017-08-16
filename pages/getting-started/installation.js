@@ -1,6 +1,5 @@
-import Button from '../../components/button'
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -10,10 +9,9 @@ export default () => (
     </Title>
 
     <p>
-      Wilderness can be used as <Link href="#es2015-module"><a>an ES2015
-      module</a></Link>, <Link href="#commonjs"><a>required with
-      commonjs</a></Link> or <Link href="#umd"><a>loaded with a script
-      element</a></Link>.
+      Wilderness can be used as <Link href="#es2015-module">an ES2015
+      module</Link>, <Link href="#commonjs">required with commonjs</Link> or
+      {' '} <Link href="#umd">loaded with a script element</Link>.
     </p>
 
     <p>
@@ -34,8 +32,7 @@ export default () => (
 
     <p>
       Alternatively you can link to, or download, the distribution from
-      the <Link href="https://unpkg.com/wilderness-core/"><a>unpkg
-      CDN</a></Link>.
+      the <Link href="https://unpkg.com/wilderness-core/">unpkg CDN</Link>.
     </p>
 
     <h2 id="es2015-module">
@@ -90,10 +87,8 @@ export default () => (
       how to use it!
     </p>
 
-    <Link href="/getting-started/create-a-shape" prefetch>
-      <Button>
-        Next lesson: Create a shape
-      </Button>
+    <Link href="/getting-started/create-a-shape" prefetch button>
+      Next lesson: Create a shape
     </Link>
   </Layout>
 )

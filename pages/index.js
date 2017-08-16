@@ -1,15 +1,12 @@
-import Button from '../components/button'
 import Layout from '../components/layout'
-import Link from 'next/link'
+import Link from '../components/link'
 import Title from '../components/title'
 
 export default () => (
   <Layout title="Wilderness - An SVG animation API">
     <Title>Wilderness - An SVG animation API</Title>
-    <Link href="/getting-started">
-      <Button>
-        Learn Wilderness
-      </Button>
+    <Link href="/getting-started" prefetch button>
+      Learn Wilderness
     </Link>
   </Layout>
 )

@@ -1,5 +1,5 @@
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -9,10 +9,9 @@ export default () => (
     </Title>
 
     <p>
-      Creates a <Link href="/api/definitions#shape"><a>Shape</a></Link> when
-      passed one or more {' '}
-      <Link href="/api/definitions#plain-shape-object"><a>Plain Shape
-      Object</a></Link>.
+      Creates a <Link href="/api/definitions#shape">Shape</Link> when passed one
+      or more <Link href="/api/definitions#plain-shape-object">Plain Shape
+      Object</Link>.
     </p>
 
     <pre>{`
@@ -31,7 +30,7 @@ export default () => (
 
     <p>
       A list of one or more Plain Shape Object. Each Plain Shape Object will
-      create a <Link href="/api/definitions#keyframe"><a>Keyframe</a></Link>.
+      create a <Link href="/api/definitions#keyframe">Keyframe</Link>.
     </p>
 
     <p>

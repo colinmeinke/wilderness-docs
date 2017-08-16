@@ -1,6 +1,5 @@
-import Button from '../../components/button'
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -11,8 +10,8 @@ export default () => (
 
     <p>
       In the previous lesson we learned how
-      to <Link href="/getting-started/create-a-shape"><a>create a shape</a></Link> using
-      the <code>shape</code> and <code>render</code> functions.
+      to <Link href="/getting-started/create-a-shape">create a shape</Link>
+      {' '} using the <code>shape</code> and <code>render</code> functions.
     </p>
 
     <p>
@@ -37,7 +36,7 @@ export default () => (
     <p>
       Each Plain Shape Object that we pass as an argument to
       the <code>shape</code> function will create a
-      Shape <Link href="/api/definitions#keyframe"><a>Keyframe</a></Link>.
+      Shape <Link href="/api/definitions#keyframe">Keyframe</Link>.
     </p>
 
     <pre>{`
@@ -91,8 +90,8 @@ export default () => (
 
     <p>
       First we need to create
-      a <Link href="/api/definitions#timeline"><a>Timeline</a></Link> using
-      the <code>timeline</code> function.
+      a <Link href="/api/definitions#timeline">Timeline</Link> using the {' '}
+      <code>timeline</code> function.
     </p>
 
     <p>
@@ -237,10 +236,8 @@ export default () => (
       a look at Timeline queuing.
     </p>
 
-    <Link href="/advanced" prefetch>
-      <Button>
-        Next lesson: Advanced features
-      </Button>
+    <Link href="/advanced" prefetch button>
+      Next lesson: Advanced features
     </Link>
   </Layout>
 )

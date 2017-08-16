@@ -1,30 +1,30 @@
-import Link from 'next/link'
+import Link from '../link'
 import style from './style'
 
 export default () => (
   <nav>
-    <a href="/">Wilderness</a>
+    <Link href="/">Wilderness</Link>
 
     <ul>
       <li>
         <Link href="/getting-started">
-          <a>Getting started</a>
+          Getting started
         </Link>
 
         <ul>
           <li>
             <Link href="/getting-started/installation">
-              <a>Installation</a>
+              Installation
             </Link>
           </li>
           <li>
             <Link href="/getting-started/create-a-shape">
-              <a>Create a shape</a>
+              Create a shape
             </Link>
           </li>
           <li>
             <Link href="/getting-started/animate-a-shape">
-              <a>Animate a shape</a>
+              Animate a shape
             </Link>
           </li>
         </ul>
@@ -32,43 +32,43 @@ export default () => (
 
       <li>
         <Link href="/advanced">
-          <a>Advanced</a>
+          Advanced
         </Link>
 
         <ul>
           <li>
             <Link href="/advanced/queuing-multiple-shapes-on-a-timeline">
-              <a>Queuing multiple shapes on a timeline</a>
+              Queuing multiple shapes on a timeline
             </Link>
           </li>
           <li>
             <Link href="/advanced/updating-timeline-playback">
-              <a>Updating timeline playback</a>
+              Updating timeline playback
             </Link>
           </li>
           <li>
             <Link href="/advanced/timeline-events">
-              <a>Timeline events</a>
+              Timeline events
             </Link>
           </li>
           <li>
             <Link href="/advanced/middleware">
-              <a>Middleware</a>
+              Middleware
             </Link>
           </li>
           <li>
             <Link href="/advanced/forces">
-              <a>Forces</a>
+              Forces
             </Link>
           </li>
           <li>
             <Link href="/advanced/motion-path">
-              <a>Motion path</a>
+              Motion path
             </Link>
           </li>
           <li>
             <Link href="/advanced/development-v-production">
-              <a>Development v production</a>
+              Development v production
             </Link>
           </li>
         </ul>
@@ -76,38 +76,38 @@ export default () => (
 
       <li>
         <Link href="/api">
-          <a>API</a>
+          API
         </Link>
 
         <ul>
           <li>
             <Link href="/api/definitions">
-              <a>Definitions</a>
+              Definitions
             </Link>
           </li>
           <li>
             <Link href="/api/the-shape-function">
-              <a>The shape function</a>
+              The shape function
             </Link>
           </li>
           <li>
             <Link href="/api/the-render-function">
-              <a>The render function</a>
+              The render function
             </Link>
           </li>
           <li>
             <Link href="/api/the-timeline-function">
-              <a>The timeline function</a>
+              The timeline function
             </Link>
           </li>
           <li>
             <Link href="/api/the-play-function">
-              <a>The play function</a>
+              The play function
             </Link>
           </li>
           <li>
             <Link href="/api/the-pause-function">
-              <a>The pause function</a>
+              The pause function
             </Link>
           </li>
         </ul>

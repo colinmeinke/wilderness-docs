@@ -1,5 +1,5 @@
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -10,7 +10,7 @@ export default () => (
 
     <p>
       Starts or updates playback of a {' '}
-      <Link href="/api/definitions#timeline"><a>Timeline</a></Link>.
+      <Link href="/api/definitions#timeline">Timeline</Link>.
     </p>
 
     <pre>{`

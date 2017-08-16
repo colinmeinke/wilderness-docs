@@ -1,5 +1,5 @@
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -9,9 +9,8 @@ export default () => (
     </Title>
 
     <p>
-      Appends one or more {' '}
-      <Link href="/api/definitions#shape"><a>Shape</a></Link> or {' '}
-      <Link href="/api/definitions#timeline"><a>Timeline</a></Link> to a DOM
+      Appends one or more <Link href="/api/definitions#shape">Shape</Link> or
+      {' '} <Link href="/api/definitions#timeline">Timeline</Link> to a DOM
       node.
     </p>
 
@@ -43,7 +42,7 @@ export default () => (
       A list of one or more Shape or Timeline. Each Shape (either directly passed as an
       argument, or as part of a Timeline) will be appended to the {' '}
       <code>parentNode</code> at its current {' '}
-      <Link href="/api/definitions#frame"><a>Frame</a></Link>.
+      <Link href="/api/definitions#frame">Frame</Link>.
     </p>
 
     <h2 id="return-value">

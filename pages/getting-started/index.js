@@ -1,6 +1,5 @@
-import Button from '../../components/button'
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -16,14 +15,12 @@ export default () => (
 
     <p>
       Before we learn how
-      to <Link href="/getting-started/create-a-shape"><a>create a
-      shape</a></Link> with Wilderness, we first need to install it.
+      to <Link href="/getting-started/create-a-shape">create a shape</Link> with
+      Wilderness, we first need to install it.
     </p>
 
-    <Link href="/getting-started/installation" prefetch>
-      <Button>
-        First up: Installation
-      </Button>
+    <Link href="/getting-started/installation" prefetch button>
+      First up: Installation
     </Link>
   </Layout>
 )

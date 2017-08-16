@@ -1,6 +1,5 @@
-import Button from '../../components/button'
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -21,8 +20,8 @@ export default () => (
     <p>
       Firstly, we need a way to define shapes - their type, dimensions and
       color. This is done with a basic javascript object, which in Wilderness
-      we call a <Link href="/api/definitions#plain-shape-object"><a>Plain
-      Shape Object</a></Link>.
+      we call a <Link href="/api/definitions#plain-shape-object">Plain Shape
+      Object</Link>.
     </p>
 
     <pre>{`
@@ -46,8 +45,8 @@ export default () => (
 
     <p>
       The job of the <code>shape</code> function is to create
-      a <Link href="/api/definitions#shape"><a>Shape</a></Link>. A Shape can
-      be rendered, placed on a timeline, and animated.
+      a <Link href="/api/definitions#shape">Shape</Link>. A Shape can be
+      rendered, placed on a timeline, and animated.
     </p>
 
     <p>
@@ -122,8 +121,8 @@ export default () => (
     <p>
       The process to create group shapes is identical to that of a single
       shape. The only difference is that our Plain Shape Object should follow
-      the <Link href="https://github.com/colinmeinke/svg-points#g"><a>SVG
-      points specification for group shapes</a></Link>.
+      the <Link href="https://github.com/colinmeinke/svg-points#g">SVG points
+      specification for group shapes</Link>.
     </p>
 
     <p>
@@ -174,10 +173,8 @@ export default () => (
       Next up let's learn how to animate a shape!
     </p>
 
-    <Link href="/getting-started/animate-a-shape" prefetch>
-      <Button>
-        Next lesson: Animate a shape
-      </Button>
+    <Link href="/getting-started/animate-a-shape" prefetch button>
+      Next lesson: Animate a shape
     </Link>
   </Layout>
 )

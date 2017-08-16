@@ -1,5 +1,5 @@
 import Layout from '../../components/layout'
-import Link from 'next/link'
+import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
@@ -15,8 +15,8 @@ export default () => (
     <p>
       A Plain Shape Object is an object that is made up of core shape
       properties as specified by {' '}
-      <Link href="https://github.com/colinmeinke/svg-points#example-shape"><a>SVG
-      points</a></Link>. It can additionally hold other useful properties,
+      <Link href="https://github.com/colinmeinke/svg-points#example-shape">SVG
+      points</Link>. It can additionally hold other useful properties,
       such as <code>fill</code> or <code>duration</code>.
     </p>
 
@@ -26,22 +26,22 @@ export default () => (
 
     <p>
       A Shape consists of one or
-      more <Link href="#keyframe"><a>Keyframes</a></Link>.
+      more <Link href="#keyframe">Keyframes</Link>.
     </p>
 
     <p>
       It is created by passing one or more {' '}
-      <Link href="#plain-shape-object"><a>Plain Shape Objects</a></Link> {' '}
-      to <Link href="/api/the-shape-function"><a>the {' '}
-      <code>shape</code> function</a></Link>
+      <Link href="#plain-shape-object">Plain Shape Objects</Link> to {' '}
+      <Link href="/api/the-shape-function"> the {' '} <code>shape</code>
+      function</Link>
     </p>
 
     <p>
       A Shape can be rendered with {' '}
-      <Link href="/api/the-render-function"><a>the <code>render</code> {' '}
-      function</a></Link> and placed on a timeline with {' '}
-      <Link href="/api/the-timeline-function"><a>the {' '}
-      <code>timeline</code> function</a></Link>.
+      <Link href="/api/the-render-function">the <code>render</code> {' '}
+      function</Link> and placed on a timeline with {' '}
+      <Link href="/api/the-timeline-function">the <code>timeline</code> {' '}
+      function</Link>.
     </p>
 
     <h2 id="keyframe">
@@ -55,7 +55,7 @@ export default () => (
 
     <p>
       If the Keyframe is not the first of a {' '}
-      <Link href="#shape"><a>Shape</a></Link> it also holds the data to tween
+      <Link href="#shape">Shape</Link> it also holds the data to tween
       from the previous Keyframe.
     </p>
 
@@ -64,14 +64,13 @@ export default () => (
     </h2>
 
     <p>
-      A Frame is a <Link href="#shape"><a>Shape</a></Link> at a specific point
-      in time.
+      A Frame is a <Link href="#shape">Shape</Link> at a specific point in time.
     </p>
 
     <p>
       This will either be identicle to a {' '}
-      <Link href="#keyframe"><a>Keyframe</a></Link>, or if in between two
-      Keyframes the Frame will be calculated using a tween.
+      <Link href="#keyframe">Keyframe</Link>, or if in between two Keyframes the
+      Frame will be calculated using a tween.
     </p>
 
     <h2 id="timeline">
@@ -79,22 +78,22 @@ export default () => (
     </h2>
 
     <p>
-      A Timeline is a sequence
-      of <Link href="#shape"><a>Shapes</a></Link> over time.
+      A Timeline is a sequence of <Link href="#shape">Shapes</Link> over time.
     </p>
 
     <p>
       It is created by passing one or more Shapes to {' '}
-      <Link href="/api/the-timeline-function"><a>the {' '}
-      <code>timeline</code> function</a></Link>
+      <Link href="/api/the-timeline-function">the <code>timeline</code> {' '}
+      function</Link>
     </p>
 
     <p>
       A Timeline can be rendered
-      with <Link href="/api/the-render-function"><a>the <code>render</code> function</a></Link>,
-      played with
-      the <Link href="/api/the-play-function"><a>the <code>play</code> function</a></Link> and
-      paused with <Link href="/api/the-pause-function"><a>the <code>pause</code> function</a></Link>.
+      with <Link href="/api/the-render-function">the <code>render</code> {' '}
+      function</Link>, played with the <Link href="/api/the-play-function">the
+      {' '} <code>play</code> function</Link> and paused with {' '}
+      <Link href="/api/the-pause-function">the <code>pause</code> {' '}
+      function</Link>.
     </p>
   </Layout>
 )
