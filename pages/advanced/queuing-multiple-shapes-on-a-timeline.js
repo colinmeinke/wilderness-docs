@@ -1,8 +1,9 @@
 import Layout from '../../components/layout'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="Coming soon">
-    <h1>Queuing multiple shapes on a timeline</h1>
+    <Title>Queuing multiple shapes on a timeline</Title>
     <p>Coming soon</p>
   </Layout>
 )

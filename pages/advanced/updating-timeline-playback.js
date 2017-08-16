@@ -1,8 +1,9 @@
 import Layout from '../../components/layout'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="Coming soon">
-    <h1>Updating timeline events</h1>
+    <Title>Updating timeline events</Title>
     <p>Coming soon</p>
   </Layout>
 )

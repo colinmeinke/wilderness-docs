@@ -1,11 +1,12 @@
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="The Wilderness play function">
-    <h1>
+    <Title>
       The <code>play</code> function
-    </h1>
+    </Title>
 
     <p>
       Starts or updates playback of a {' '}

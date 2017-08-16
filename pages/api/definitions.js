@@ -1,11 +1,12 @@
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="Wilderness definitions">
-    <h1>
+    <Title>
       Definitions
-    </h1>
+    </Title>
 
     <h2 id="plain-shape-object">
       Plain Shape Object

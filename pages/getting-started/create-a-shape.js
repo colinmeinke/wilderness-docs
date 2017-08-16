@@ -1,11 +1,13 @@
+import Button from '../../components/button'
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="Create a shape with Wilderness">
-    <h1>
+    <Title>
       Create a shape
-    </h1>
+    </Title>
 
     <h2 id="basic-shapes">
       Basic shapes
@@ -173,9 +175,9 @@ export default () => (
     </p>
 
     <Link href="/getting-started/animate-a-shape" prefetch>
-      <a>
+      <Button>
         Next lesson: Animate a shape
-      </a>
+      </Button>
     </Link>
   </Layout>
 )

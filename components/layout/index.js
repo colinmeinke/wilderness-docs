@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Nav from './nav'
+import Nav from '../nav'
+import style from './style'
 
 export default ({ children, title = 'Wilderness' }) => (
   <div>
@@ -9,5 +10,6 @@ export default ({ children, title = 'Wilderness' }) => (
     </Head>
     <Nav />
     { children }
+    <style jsx global>{ style }</style>
   </div>
 )

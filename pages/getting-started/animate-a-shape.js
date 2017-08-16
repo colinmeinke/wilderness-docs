@@ -1,11 +1,13 @@
+import Button from '../../components/button'
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="Animate a shape with Wilderness">
-    <h1>
+    <Title>
       Animate a shape
-    </h1>
+    </Title>
 
     <p>
       In the previous lesson we learned how
@@ -236,9 +238,9 @@ export default () => (
     </p>
 
     <Link href="/advanced" prefetch>
-      <a>
+      <Button>
         Next lesson: Advanced features
-      </a>
+      </Button>
     </Link>
   </Layout>
 )

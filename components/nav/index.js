@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import style from './style'
 
 export default () => (
   <nav>
@@ -112,5 +113,7 @@ export default () => (
         </ul>
       </li>
     </ul>
+
+    <style jsx>{ style }</style>
   </nav>
 )

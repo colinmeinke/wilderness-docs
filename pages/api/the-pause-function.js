@@ -1,11 +1,12 @@
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="The Wilderness pause function">
-    <h1>
+    <Title>
       The <code>pause</code> function
-    </h1>
+    </Title>
 
     <p>
       Stops playback of a {' '}

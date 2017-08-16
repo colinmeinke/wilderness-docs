@@ -1,11 +1,12 @@
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="The Wilderness shape function">
-    <h1>
+    <Title>
       The <code>shape</code> function
-    </h1>
+    </Title>
 
     <p>
       Creates a <Link href="/api/definitions#shape"><a>Shape</a></Link> when

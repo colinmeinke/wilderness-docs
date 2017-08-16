@@ -1,9 +1,13 @@
+import Button from '../../components/button'
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="Getting started with Wilderness">
-    <h1>Getting started</h1>
+    <Title>
+      Getting started
+    </Title>
 
     <p>
       With Wilderness it's simple to get up and running. In no time we'll have
@@ -17,9 +21,9 @@ export default () => (
     </p>
 
     <Link href="/getting-started/installation" prefetch>
-      <a>
-        First lesson: Installation
-      </a>
+      <Button>
+        First up: Installation
+      </Button>
     </Link>
   </Layout>
 )

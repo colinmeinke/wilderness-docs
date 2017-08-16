@@ -1,9 +1,13 @@
+import Button from '../../components/button'
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Title from '../../components/title'
 
 export default () => (
   <Layout title="Installing Wilderness">
-    <h1>Installation</h1>
+    <Title>
+      Installation
+    </Title>
 
     <p>
       Wilderness can be used as <Link href="#es2015-module"><a>an ES2015
@@ -87,7 +91,9 @@ export default () => (
     </p>
 
     <Link href="/getting-started/create-a-shape" prefetch>
-      <a>Next lesson: Create a shape</a>
+      <Button>
+        Next lesson: Create a shape
+      </Button>
     </Link>
   </Layout>
 )
