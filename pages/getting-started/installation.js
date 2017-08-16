@@ -61,16 +61,18 @@ export default () => (
     </p>
 
     <p>
-      Look in the `dist` directory of the distribution and select either the
-      [development](https://unpkg.com/wilderness/dist/wilderness.development.js)
-      or
-      [production](https://unpkg.com/wilderness/dist/wilderness.production.js)
-      file.
+      Look in the <code>dist</code> directory of the distribution and select
+      either the {' '}
+      <Link href="https://unpkg.com/wilderness/dist/wilderness.development.js">development</Link>
+      {' '} or {' '}
+      <Link href="https://unpkg.com/wilderness/dist/wilderness.production.js">production</Link>
+      {' '} file.
     </p>
 
     <p>
-      Add a `script` tag linking to the file into your HTML layout, and you
-      will then have access to the global `Wilderness` object.
+      Add a <code>script</code> tag linking to the file into your HTML layout,
+      and you will then have access to the global <code>Wilderness</code> {' '}
+      object.
     </p>
 
     <pre>{`
