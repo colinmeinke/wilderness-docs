@@ -1,11 +1,13 @@
+import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
   <Layout title="The Wilderness shape function">
     <Title>
-      The <code>shape</code> function
+      The <Code inline inherit>shape</Code> function
     </Title>
 
     <p>
@@ -14,17 +16,17 @@ export default () => (
       Object</Link>.
     </p>
 
-    <pre>{`
+    <Code>{`
       shape(plainShapeObject1, plainShapeObject2, ..., options)
-    `}</pre>
+    `}</Code>
 
-    <h2 id="arguments">
+    <Subtitle id="arguments">
       Arguments
-    </h2>
+    </Subtitle>
 
     <p>
       <strong>
-        <code>plainShapeObject1, plainShapeObject2, ...</code>
+        <Code inline>plainShapeObject1, plainShapeObject2, ...</Code>
       </strong>
     </p>
 
@@ -35,9 +37,9 @@ export default () => (
 
     <p>
       <strong>
-        <code>options</code>
+        <Code inline>options</Code>
       </strong> {' '}
-      (optional)
+      <small>(optional)</small>
     </p>
 
     <p>
@@ -45,12 +47,12 @@ export default () => (
     </p>
 
     <ul>
-      <li><code>name</code> (optional) is a string or number.</li>
+      <li><Code inline>name</Code> <small>(optional)</small> is a string or number.</li>
     </ul>
 
-    <h2 id="return-value">
+    <Subtitle id="return-value">
       Return value
-    </h2>
+    </Subtitle>
 
     <p>
       A Shape.

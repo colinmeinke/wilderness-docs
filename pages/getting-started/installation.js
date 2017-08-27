@@ -1,5 +1,7 @@
+import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
@@ -18,42 +20,42 @@ export default () => (
       Get Wilderness by installing the npm distribution:
     </p>
 
-    <pre>{`
+    <Code>{`
       yarn add wilderness
-    `}</pre>
+    `}</Code>
 
     <p>
       or
     </p>
 
-    <pre>{`
+    <Code>{`
       npm --save wilderness
-    `}</pre>
+    `}</Code>
 
     <p>
       Alternatively you can link to, or download, the distribution from
       the <Link href="https://unpkg.com/wilderness-core/">unpkg CDN</Link>.
     </p>
 
-    <h2 id="es2015-module">
+    <Subtitle id="es2015-module">
       ES2015 module
-    </h2>
+    </Subtitle>
 
-    <pre>{`
+    <Code>{`
       import { shape, timeline, render, play } from 'wilderness'
-    `}</pre>
+    `}</Code>
 
-    <h2 id="commonjs">
+    <Subtitle id="commonjs">
       commonjs
-    </h2>
+    </Subtitle>
 
-    <pre>{`
+    <Code>{`
       const { shape, timeline, render, play } = require('wilderness')
-    `}</pre>
+    `}</Code>
 
-    <h2 id="umd">
+    <Subtitle id="umd">
       UMD
-    </h2>
+    </Subtitle>
 
     <p>
       If you just want to drop a javascript file onto your page, then this is
@@ -61,8 +63,8 @@ export default () => (
     </p>
 
     <p>
-      Look in the <code>dist</code> directory of the distribution and select
-      either the {' '}
+      Look in the <Code inline>dist</Code> directory of the distribution and
+      select either the {' '}
       <Link href="https://unpkg.com/wilderness/dist/wilderness.development.js">development</Link>
       {' '} or {' '}
       <Link href="https://unpkg.com/wilderness/dist/wilderness.production.js">production</Link>
@@ -70,17 +72,17 @@ export default () => (
     </p>
 
     <p>
-      Add a <code>script</code> tag linking to the file into your HTML layout,
-      and you will then have access to the global <code>Wilderness</code> {' '}
+      Add a <Code inline>script</Code> tag linking to the file into your HTML layout,
+      and you will then have access to the global <Code inline>Wilderness</Code> {' '}
       object.
     </p>
 
-    <pre>{`
+    <Code>{`
       const shape = Wilderness.shape
       const timeline = Wilderness.timeline
       const render = Wilderness.render
       const play = Wilderness.play
-    `}</pre>
+    `}</Code>
 
     <hr />
 

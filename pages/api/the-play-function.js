@@ -1,11 +1,13 @@
+import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
   <Layout title="The Wilderness play function">
     <Title>
-      The <code>play</code> function
+      The <Code inline inherit>play</Code> function
     </Title>
 
     <p>
@@ -13,9 +15,9 @@ export default () => (
       <Link href="/api/definitions#timeline">Timeline</Link>.
     </p>
 
-    <pre>{`
+    <Code>{`
       play(timeline, options)
-    `}</pre>
+    `}</Code>
 
     <h2 id="arguments">
       Arguments
@@ -23,7 +25,7 @@ export default () => (
 
     <p>
       <strong>
-        <code>timeline</code>
+        <Code inline>timeline</Code>
       </strong>
     </p>
 
@@ -33,9 +35,9 @@ export default () => (
 
     <p>
       <strong>
-        <code>options</code>
+        <Code inline>options</Code>
       </strong> {' '}
-      (optional)
+      <small>(optional)</small>
     </p>
 
     <p>
@@ -44,27 +46,27 @@ export default () => (
 
     <ul>
       <li>
-        <code>alternate</code> (optional) defines if the next iteration should
+        <Code inline>alternate</Code> <small>(optional)</small> defines if the next iteration should
         reverse current direction?
       </li>
       <li>
-        <code>duration</code> (optional) is the number of milliseconds that
+        <Code inline>duration</Code> <small>(optional)</small> is the number of milliseconds that
         each iteration lasts.
       </li>
       <li>
-        <code>initialIterations</code> (optional) is the starting number of
+        <Code inline>initialIterations</Code> <small>(optional)</small> is the starting number of
         iterations.
       </li>
       <li>
-        <code>iterations</code> (optional) is the number of playback
+        <Code inline>iterations</Code> <small>(optional)</small> is the number of playback
         interations (additional to initialIterations).
       </li>
       <li>
-        <code>reverse</code> (optional) defines if the the first iteration
+        <Code inline>reverse</Code> <small>(optional)</small> defines if the the first iteration
         should start in a reverse direction?
       </li>
       <li>
-        <code>started</code> (optional) is the UNIX timestamp of playback
+        <Code inline>started</Code> <small>(optional)</small> is the UNIX timestamp of playback
         start.
       </li>
     </ul>

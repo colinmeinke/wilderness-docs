@@ -1,11 +1,13 @@
+import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
   <Layout title="The Wilderness timeline function">
     <Title>
-      The <code>timeline</code> function
+      The <Code inline inherit>timeline</Code> function
     </Title>
 
     <p>
@@ -14,17 +16,17 @@ export default () => (
       array.
     </p>
 
-    <pre>{`
+    <Code>{`
       timeline(shapeOrArray1, shapeOrArray2, ..., options)
-    `}</pre>
+    `}</Code>
 
-    <h2 id="arguments">
+    <Subtitle id="arguments">
       Arguments
-    </h2>
+    </Subtitle>
 
     <p>
       <strong>
-        <code>shapeOrArray1, shapeOrArray2, ...</code>
+        <Code inline>shapeOrArray1, shapeOrArray2, ...</Code>
       </strong>
     </p>
 
@@ -36,31 +38,31 @@ export default () => (
       If passed an array instead of a Shape it should take the following form.
     </p>
 
-    <pre>{`
+    <Code>{`
       [ shape, options ]
-    `}</pre>
+    `}</Code>
 
     <p>
       Where:
     </p>
 
     <ul>
-      <li><code>shape</code> is a Shape.</li>
-      <li><code>options</code> is an object, where:
+      <li><Code inline>shape</Code> is a Shape.</li>
+      <li><Code inline>options</Code> is an object, where:
         <ul>
-          <li><code>name</code> (optional) is a string or number.</li>
-          <li><code>queue</code> (optional) is an object, where:
+          <li><Code inline>name</Code> <small>(optional)</small> is a string or number.</li>
+          <li><Code inline>queue</Code> <small>(optional)</small> is an object, where:
             <ul>
               <li>
-                <code>offset</code> (optional) is the offset in milliseconds
+                <Code inline>offset</Code> <small>(optional)</small> is the offset in milliseconds
                 to adjust the queuing of this shape.
               </li>
               <li>
-                <code>at</code> (optional) is the name of the Shape to queue
+                <Code inline>at</Code> <small>(optional)</small> is the name of the Shape to queue
                 at (in parallel).
               </li>
               <li>
-                <code>after</code> (optional) is the name of the Shape to
+                <Code inline>after</Code> <small>(optional)</small> is the name of the Shape to
                 queue after (in sequence).
               </li>
             </ul>
@@ -71,7 +73,7 @@ export default () => (
 
     <p>
       <strong>
-        <code>options</code>
+        <Code inline>options</Code>
       </strong> {' '}
       (optional)
     </p>
@@ -82,38 +84,38 @@ export default () => (
 
     <ul>
       <li>
-        <code>alternate</code> (optional) defines if the next iteration should
+        <Code inline>alternate</Code> <small>(optional)</small> defines if the next iteration should
         reverse current direction?
       </li>
       <li>
-        <code>duration</code> (optional) is the number of milliseconds that
+        <Code inline>duration</Code> <small>(optional)</small> is the number of milliseconds that
         each iteration lasts.
       </li>
       <li>
-        <code>initialIterations</code> (optional) is the starting number of
+        <Code inline>initialIterations</Code> <small>(optional)</small> is the starting number of
         iterations.
       </li>
       <li>
-        <code>iterations</code> (optional) is the number of playback
+        <Code inline>iterations</Code> <small>(optional)</small> is the number of playback
         interations (additional to initialIterations).
       </li>
       <li>
-        <code>reverse</code> (optional) defines if the the first iteration
+        <Code inline>reverse</Code> <small>(optional)</small> defines if the the first iteration
         should start in a reverse direction?
       </li>
       <li>
-        <code>started</code> (optional) is the UNIX timestamp of playback
+        <Code inline>started</Code> <small>(optional)</small> is the UNIX timestamp of playback
         start.
       </li>
       <li>
-        <code>middleware</code> (optional) is an array of {' '}
+        <Code inline>middleware</Code> <small>(optional)</small> is an array of {' '}
         <Link href="/advanced/middleware">Middleware</Link>.
       </li>
     </ul>
 
-    <h2 id="return-value">
+    <Subtitle id="return-value">
       Return value
-    </h2>
+    </Subtitle>
 
     <p>
       A Timeline.

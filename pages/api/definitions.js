@@ -1,5 +1,7 @@
+import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
@@ -8,21 +10,21 @@ export default () => (
       Definitions
     </Title>
 
-    <h2 id="plain-shape-object">
+    <Subtitle id="plain-shape-object">
       Plain Shape Object
-    </h2>
+    </Subtitle>
 
     <p>
       A Plain Shape Object is an object that is made up of core shape
       properties as specified by {' '}
       <Link href="https://github.com/colinmeinke/svg-points#example-shape">SVG
       points</Link>. It can additionally hold other useful properties,
-      such as <code>fill</code> or <code>duration</code>.
+      such as <Code inline>fill</Code> or <Code inline>duration</Code>.
     </p>
 
-    <h2 id="shape">
+    <Subtitle id="shape">
       Shape
-    </h2>
+    </Subtitle>
 
     <p>
       A Shape consists of one or
@@ -32,21 +34,21 @@ export default () => (
     <p>
       It is created by passing one or more {' '}
       <Link href="#plain-shape-object">Plain Shape Objects</Link> to {' '}
-      <Link href="/api/the-shape-function"> the {' '} <code>shape</code>
+      <Link href="/api/the-shape-function"> the {' '} <Code inline>shape</Code>
       function</Link>
     </p>
 
     <p>
       A Shape can be rendered with {' '}
-      <Link href="/api/the-render-function">the <code>render</code> {' '}
+      <Link href="/api/the-render-function">the <Code inline>render</Code> {' '}
       function</Link> and placed on a timeline with {' '}
-      <Link href="/api/the-timeline-function">the <code>timeline</code> {' '}
+      <Link href="/api/the-timeline-function">the <Code inline>timeline</Code> {' '}
       function</Link>.
     </p>
 
-    <h2 id="keyframe">
+    <Subtitle id="keyframe">
       Keyframe
-    </h2>
+    </Subtitle>
 
     <p>
       A Keyframe holds the type, dimension  and color data required to render
@@ -59,9 +61,9 @@ export default () => (
       from the previous Keyframe.
     </p>
 
-    <h2 id="frame">
+    <Subtitle id="frame">
       Frame
-    </h2>
+    </Subtitle>
 
     <p>
       A Frame is a <Link href="#shape">Shape</Link> at a specific point in time.
@@ -73,9 +75,9 @@ export default () => (
       Frame will be calculated using a tween.
     </p>
 
-    <h2 id="timeline">
+    <Subtitle id="timeline">
       Timeline
-    </h2>
+    </Subtitle>
 
     <p>
       A Timeline is a sequence of <Link href="#shape">Shapes</Link> over time.
@@ -83,16 +85,16 @@ export default () => (
 
     <p>
       It is created by passing one or more Shapes to {' '}
-      <Link href="/api/the-timeline-function">the <code>timeline</code> {' '}
+      <Link href="/api/the-timeline-function">the <Code inline>timeline</Code> {' '}
       function</Link>
     </p>
 
     <p>
       A Timeline can be rendered
-      with <Link href="/api/the-render-function">the <code>render</code> {' '}
+      with <Link href="/api/the-render-function">the <Code inline>render</Code> {' '}
       function</Link>, played with the <Link href="/api/the-play-function">the
-      {' '} <code>play</code> function</Link> and paused with {' '}
-      <Link href="/api/the-pause-function">the <code>pause</code> {' '}
+      {' '} <Code inline>play</Code> function</Link> and paused with {' '}
+      <Link href="/api/the-pause-function">the <Code inline>pause</Code> {' '}
       function</Link>.
     </p>
   </Layout>

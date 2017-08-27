@@ -1,11 +1,13 @@
+import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
   <Layout title="The Wilderness render function">
     <Title>
-      The <code>render</code> function
+      The <Code inline inherit>render</Code> function
     </Title>
 
     <p>
@@ -14,17 +16,17 @@ export default () => (
       node.
     </p>
 
-    <pre>{`
+    <Code>{`
       render(parentNode, shapeOrTimeline1, shapeOrTimeline2, ...)
-    `}</pre>
+    `}</Code>
 
-    <h2 id="arguments">
+    <Subtitle id="arguments">
       Arguments
-    </h2>
+    </Subtitle>
 
     <p>
       <strong>
-        <code>parentNode</code>
+        <Code inline>parentNode</Code>
       </strong>
     </p>
 
@@ -34,20 +36,20 @@ export default () => (
 
     <p>
       <strong>
-        <code>shapeOrTimeline1, shapeOrTimeline2, ...</code>
+        <Code inline>shapeOrTimeline1, shapeOrTimeline2, ...</Code>
       </strong>
     </p>
 
     <p>
       A list of one or more Shape or Timeline. Each Shape (either directly passed as an
       argument, or as part of a Timeline) will be appended to the {' '}
-      <code>parentNode</code> at its current {' '}
+      <Code inline>parentNode</Code> at its current {' '}
       <Link href="/api/definitions#frame">Frame</Link>.
     </p>
 
-    <h2 id="return-value">
+    <Subtitle id="return-value">
       Return value
-    </h2>
+    </Subtitle>
 
     <p>
       None.

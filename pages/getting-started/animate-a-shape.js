@@ -1,5 +1,7 @@
+import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
@@ -11,35 +13,35 @@ export default () => (
     <p>
       In the previous lesson we learned how
       to <Link href="/getting-started/create-a-shape">create a shape</Link>
-      {' '} using the <code>shape</code> and <code>render</code> functions.
+      {' '} using the <Code inline>shape</Code> and <Code inline>render</Code> functions.
     </p>
 
     <p>
       Now we are going to learn how to animate a shape using
-      the <code>timeline</code> and <code>play</code> functions.
+      the <Code inline>timeline</Code> and <Code inline>play</Code> functions.
     </p>
 
-    <h2 id="creating-keyframes">
+    <Subtitle id="creating-keyframes">
       Creating keyframes
-    </h2>
+    </Subtitle>
 
     <p>
       Previously, we created a Shape by passing a single argument (a Plain
-      Shape Object) to the <code>shape</code> function.
+      Shape Object) to the <Code inline>shape</Code> function.
     </p>
 
     <p>
-      However, the <code>shape</code> function can also take multiple
+      However, the <Code inline>shape</Code> function can also take multiple
       arguments.
     </p>
 
     <p>
       Each Plain Shape Object that we pass as an argument to
-      the <code>shape</code> function will create a
+      the <Code inline>shape</Code> function will create a
       Shape <Link href="/api/definitions#keyframe">Keyframe</Link>.
     </p>
 
-    <pre>{`
+    <Code>{`
       import { shape } from 'wilderness'
 
       const keyframe1 = {
@@ -61,22 +63,22 @@ export default () => (
       }
 
       const morph = shape(keyframe1, keyframe2)
-    `}</pre>
+    `}</Code>
 
     <p>
       In the code above, we have created a Shape and assigned it to the
-      variable <code>morph</code>. The Shape has two Keyframes - a yellow
+      variable <Code inline>morph</Code>. The Shape has two Keyframes - a yellow
       circle, and a red(ish) square.
     </p>
 
     <p>
       These two Keyframes are spaced 2000 milliseconds apart, as we have set
-      a <code>duration</code> property on <code>keyframe2</code>.
+      a <Code inline>duration</Code> property on <Code inline>keyframe2</Code>.
     </p>
 
-    <h2 id="creating-a-timeline">
+    <Subtitle id="creating-a-timeline">
       Creating a timeline
-    </h2>
+    </Subtitle>
 
     <p>
       If we went ahead and rendered our Shape at this point, it would be
@@ -91,15 +93,15 @@ export default () => (
     <p>
       First we need to create
       a <Link href="/api/definitions#timeline">Timeline</Link> using the {' '}
-      <code>timeline</code> function.
+      <Code inline>timeline</Code> function.
     </p>
 
     <p>
-      At its most basic, the <code>timeline</code> function takes a single
+      At its most basic, the <Code inline>timeline</Code> function takes a single
       argument - a Shape.
     </p>
 
-    <pre>{`
+    <Code>{`
       import { shape, render, timeline } from 'wilderness'
 
       const keyframe1 = {
@@ -125,24 +127,24 @@ export default () => (
       const animation = timeline(morph)
 
       render(document.querySelectorAll('svg'), animation)
-    `}</pre>
+    `}</Code>
 
     <p>
-      Instead of passing the <code>render</code> function our Shape, we pass
+      Instead of passing the <Code inline>render</Code> function our Shape, we pass
       it our Timeline (that we have assigned to the
-      variable <code>animation</code>).
+      variable <Code inline>animation</Code>).
     </p>
 
-    <h2 id="#playing-a-timeline">
+    <Subtitle id="#playing-a-timeline">
       Playing a timeline
-    </h2>
+    </Subtitle>
 
     <p>
       Once we have created and rendered a Timeline, we can then start playback
-      of the Timeline using the <code>play</code> function.
+      of the Timeline using the <Code inline>play</Code> function.
     </p>
 
-    <pre>{`
+    <Code>{`
       import { shape, render, timeline, play } from 'wilderness'
 
       const keyframe1 = {
@@ -170,25 +172,25 @@ export default () => (
       render(document.querySelectorAll('svg'), animation)
 
       play(animation)
-    `}</pre>
+    `}</Code>
 
-    <h2 id="setting-playback-options">
+    <Subtitle id="setting-playback-options">
       Setting playback options
-    </h2>
+    </Subtitle>
 
     <p>
-      Both the <code>timeline</code> and <code>play</code> functions can take
+      Both the <Code inline>timeline</Code> and <Code inline>play</Code> functions can take
       an optional final argument. This argument is an object containing
       options to control playback of the Timeline.
     </p>
 
     <p>
-      Below, we use this feature to instruct our <code>play</code> function to
+      Below, we use this feature to instruct our <Code inline>play</Code> function to
       iterate the Timeline infinitely, and to alternate direction every time
       an iteration completes.
     </p>
 
-    <pre>{`
+    <Code>{`
       import { shape, render, timeline, play } from 'wilderness'
 
       const keyframe1 = {
@@ -221,7 +223,7 @@ export default () => (
       render(document.querySelectorAll('svg'), animation)
 
       play(animation, playbackOptions)
-    `}</pre>
+    `}</Code>
 
     <hr />
 

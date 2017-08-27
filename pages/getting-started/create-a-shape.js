@@ -1,5 +1,7 @@
+import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
@@ -8,9 +10,9 @@ export default () => (
       Create a shape
     </Title>
 
-    <h2 id="basic-shapes">
+    <Subtitle id="basic-shapes">
       Basic shapes
-    </h2>
+    </Subtitle>
 
     <p>
       In this lesson we're going to use Wilderness to hand-code an SVG circle,
@@ -24,7 +26,7 @@ export default () => (
       Object</Link>.
     </p>
 
-    <pre>{`
+    <Code>{`
       const plainShapeObject = {
         type: 'circle',
         cx: 50,
@@ -32,7 +34,7 @@ export default () => (
         r: 20,
         fill: 'yellow'
       }
-    `}</pre>
+    `}</Code>
 
     <p>
       The code above defines a yellow circle. However, as it's only a
@@ -40,21 +42,21 @@ export default () => (
     </p>
 
     <p>
-      This is where the <code>shape</code> function comes in.
+      This is where the <Code inline>shape</Code> function comes in.
     </p>
 
     <p>
-      The job of the <code>shape</code> function is to create
+      The job of the <Code inline>shape</Code> function is to create
       a <Link href="/api/definitions#shape">Shape</Link>. A Shape can be
       rendered, placed on a timeline, and animated.
     </p>
 
     <p>
-      At its most basic, the <code>shape</code> function takes a Plain Shape
+      At its most basic, the <Code inline>shape</Code> function takes a Plain Shape
       Object as a single argument.
     </p>
 
-    <pre>{`
+    <Code>{`
       import { shape } from 'wilderness'
 
       const plainShapeObject = {
@@ -66,19 +68,19 @@ export default () => (
       }
 
       const circle = shape(plainShapeObject)
-    `}</pre>
+    `}</Code>
 
     <p>
       We've now created our first Shape, and assigned it to a variable
-      named <code>circle</code>. Pretty simple so far, right?
+      named <Code inline>circle</Code>. Pretty simple so far, right?
     </p>
 
     <p>
       This Shape can be rendered to an HTML page using
-      the <code>render</code> function.
+      the <Code inline>render</Code> function.
     </p>
 
-    <pre>{`
+    <Code>{`
       import { shape, render } from 'wilderness'
 
       const plainShapeObject = {
@@ -92,7 +94,7 @@ export default () => (
       const circle = shape(plainShapeObject)
 
       render(document.querySelector('svg'), circle)
-    `}</pre>
+    `}</Code>
 
     <p>
       Voila! We have created our first SVG shape, and added it to the DOM,
@@ -100,23 +102,23 @@ export default () => (
     </p>
 
     <p>
-      You will notice that the <code>render</code> function's first argument
+      You will notice that the <Code inline>render</Code> function's first argument
       is a DOM node. This is the parent node to which we wish to append our
       circle.
     </p>
 
     <p>
       If we wanted to render multiple Shapes, we simply add additional
-      arguments to the <code>render</code> function.
+      arguments to the <Code inline>render</Code> function.
     </p>
 
-    <pre>{`
+    <Code>{`
       render(document.querySelector('svg'), shape1, shape2, shape3)
-    `}</pre>
+    `}</Code>
 
-    <h2 id="group-shapes">
+    <Subtitle id="group-shapes">
       Group shapes
-    </h2>
+    </Subtitle>
 
     <p>
       The process to create group shapes is identical to that of a single
@@ -129,7 +131,7 @@ export default () => (
       Let's create a tree!
     </p>
 
-    <pre>{`
+    <Code>{`
       const plainShapeObject = {
         type: 'g',
         shapes: [
@@ -164,7 +166,7 @@ export default () => (
       const tree = shape(plainShapeObject)
 
       render(document.querySelectorAll('svg'), tree)
-    `}</pre>
+    `}</Code>
 
     <hr />
 

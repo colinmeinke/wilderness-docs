@@ -4,6 +4,6 @@ import Title from '../../components/title'
 export default () => (
   <Layout title="Coming soon">
     <Title>Forces</Title>
-    <p>Coming soon</p>
+    <p>Documentation coming soon</p>
   </Layout>
 )
