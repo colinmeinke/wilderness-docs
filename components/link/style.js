@@ -49,6 +49,10 @@ export default `
     text-decoration: none;
   }
 
+  .button + .button {
+    margin-left: ${grid.gutter / 4}px;
+  }
+
   .button:not(.primary):not(.secondary) {
     background-color: ${color.tertiary.main};
     color: ${color.tertiary.contrast};
@@ -60,13 +64,13 @@ export default `
   }
 
   .button.primary {
-    background-color: ${color.primary.main};
+    background-color: ${color.primary.alt};
     color: ${color.primary.contrast};
   }
 
   .button.primary:hover,
   .button.primary:focus {
-    background-color: ${color.primary.alt}
+    background-color: ${color.primary.main}
   }
 
   .button.secondary {

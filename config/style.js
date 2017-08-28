@@ -6,14 +6,14 @@ const border = {
 
 const color = {
   primary: {
-    main: 'hsl(60,30%,96%)',
-    alt: 'hsl(60,30%,90%)',
-    contrast: 'hsl(60,2%,15%)'
+    main: 'hsl(80,30%,96%)',
+    alt: 'hsl(80,30%,90%)',
+    contrast: 'hsl(80,8%,20%)'
   },
   secondary: {
-    main: 'hsl(60,50%,75%)',
-    alt: 'hsl(60,60%,75%)',
-    contrast: 'hsl(60,2%,15%)'
+    main: 'hsl(80,75%,80%)',
+    alt: 'hsl(80,85%,80%)',
+    contrast: 'hsl(80,8%,20%)'
   },
   tertiary: {
     main: 'hsl(200,75%,50%)',
@@ -41,7 +41,5 @@ const grid = {
   column: 80,
   gutter: baseline * 3
 }
-
-console.log(grid)
 
 export { border, color, font, grid }

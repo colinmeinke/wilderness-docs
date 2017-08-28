@@ -3,6 +3,7 @@ import { color, font, grid } from '../../config/style'
 export default `
   nav {
     background-color: ${color.primary.contrast};
+    box-shadow: -5px 0 5px hsla(0,0%,0%,0.2) inset;
     box-sizing: border-box;
     flex-shrink: 0;
     max-width: ${grid.column * 3 + grid.gutter * 3}px;

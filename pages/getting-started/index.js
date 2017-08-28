@@ -9,14 +9,14 @@ export default () => (
     </Title>
 
     <p>
-      With Wilderness it's simple to get up and running. In no time we'll have
-      our first shape created, rendered and animated.
+      The Wilderness API is simple, intuative and easy to learn. We can learn
+      the basics in under 10 minutes.
     </p>
 
     <p>
-      Before we learn how
-      to <Link href="/getting-started/create-a-shape">create a shape</Link> with
-      Wilderness, we first need to install it.
+      But let's not get ahead of ourselves. Before we learn how
+      to <Link href="/getting-started/create-a-shape">create a shape</Link>, we
+      first need to install Wilderness.
     </p>
 
     <Link href="/getting-started/installation" prefetch button>

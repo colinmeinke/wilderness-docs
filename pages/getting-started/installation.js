@@ -11,8 +11,13 @@ export default () => (
     </Title>
 
     <p>
-      Wilderness can be used as <Link href="#es2015-module">an ES2015
-      module</Link>, <Link href="#commonjs">required with commonjs</Link> or
+      Wilderness is free and {' '}
+      <Link href="https://github.com/colinmeinke/wilderness">open-source</Link>.
+    </p>
+
+    <p>
+      It can be used as <Link href="#es2015-module">an ES2015 module</Link>,
+      {' '} <Link href="#commonjs">required with commonjs</Link> or
       {' '} <Link href="#umd">loaded with a script element</Link>.
     </p>
 
