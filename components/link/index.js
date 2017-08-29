@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import style from './style'
 
-
-
 export default ({ button, children, primary, secondary, ...props }) => (
   <Link { ...props }>
     <a

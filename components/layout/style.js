@@ -54,6 +54,6 @@ export default `
   main {
     box-sizing: border-box;
     max-width: ${grid.column * 7 + grid.gutter * 8}px;
-    padding: ${grid.baseline * 2}px ${grid.gutter}px
+    padding: ${grid.baseline * 2}px ${grid.gutter}px ${grid.baseline * 6}px;
   }
 `
