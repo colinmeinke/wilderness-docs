@@ -22,41 +22,4 @@ export default `
     font-size: ${font.size.small}px;
     line-height: ${grid.baseline * 3}px;
   }
-
-  a {
-    color: ${color.secondary.main};
-    display: block;
-    padding-left: ${grid.gutter}px;
-    position: relative;
-    text-decoration: none;
-    transition: all 0.15s ease-in-out;
-  }
-
-  a:not(.button):hover,
-  a:not(.button):focus {
-    background-color: hsla(0,0%,0%,0.25);
-    color: ${color.secondary.alt};
-  }
-
-  ul ul a {
-    color: ${color.primary.main};
-    padding-left: ${grid.gutter * 1.5}px;
-    padding-right: ${grid.gutter}px;
-  }
-
-  .selected {
-    background-color: hsla(0,0%,0%,0.25);
-  }
-
-  .selected::after {
-    border-bottom: ${grid.baseline * 0.5}px solid transparent;
-    border-left: ${grid.baseline / 3}px solid transparent;
-    border-right: ${grid.baseline / 3}px solid white;
-    border-top: ${grid.baseline * 0.5}px solid transparent;
-    content: '';
-    margin-top: -${grid.baseline * 0.5}px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-  }
 `

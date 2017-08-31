@@ -1,166 +1,122 @@
-import Link from 'next/link'
+import Link from '../link'
 import Router from 'next/router'
 import style from './style'
-
-const isActive = href => process.browser ? Router.route === href : false
 
 export default () => (
   <nav>
     <ul>
       <li>
-        <Link href="/">
-          <a className={ isActive('/') ? 'selected' : '' }>
-            What is Wilderness?
-          </a>
+        <Link href="/" nav>
+          What is Wilderness?
         </Link>
       </li>
       <li>
-        <Link href="/getting-started">
-          <a className={ isActive('/getting-started') ? 'selected' : '' }>
-            Getting started
-          </a>
+        <Link href="/getting-started" nav>
+          Getting started
         </Link>
 
         <ul>
           <li>
-            <Link href="/getting-started/installation">
-              <a className={ isActive('/getting-started/installation') ? 'selected' : '' }>
-                Installation
-              </a>
+            <Link href="/getting-started/installation" nav subnav>
+              Installation
             </Link>
           </li>
           <li>
-            <Link href="/getting-started/create-a-shape">
-              <a className={ isActive('/getting-started/create-a-shape') ? 'selected' : '' }>
-                Create a shape
-              </a>
+            <Link href="/getting-started/create-a-shape" nav subnav>
+              Create a shape
             </Link>
           </li>
           <li>
-            <Link href="/getting-started/animate-a-shape">
-              <a className={ isActive('/getting-started/animate-a-shape') ? 'selected' : '' }>
-                Animate a shape
-              </a>
+            <Link href="/getting-started/animate-a-shape" nav subnav>
+              Animate a shape
             </Link>
           </li>
         </ul>
       </li>
 
       <li>
-        <Link href="/advanced">
-          <a className={ isActive('/advanced') ? 'selected' : '' }>
-            Advanced
-          </a>
+        <Link href="/advanced" nav>
+          Advanced
         </Link>
 
         <ul>
           <li>
-            <Link href="/advanced/creating-shapes-from-existing-dom-nodes">
-              <a className={ isActive('/advanced/creating-shapes-from-existing-dom-nodes') ? 'selected' : '' }>
-                Creating shapes from existing DOM nodes
-              </a>
+            <Link href="/advanced/creating-shapes-from-existing-dom-nodes" nav subnav>
+              Creating shapes from existing DOM nodes
             </Link>
           </li>
           <li>
-            <Link href="/advanced/queuing-multiple-shapes-on-a-timeline">
-              <a className={ isActive('/advanced/queuing-multiple-shapes-on-a-timeline') ? 'selected' : '' }>
-                Queuing multiple shapes on a timeline
-              </a>
+            <Link href="/advanced/queuing-multiple-shapes-on-a-timeline" nav subnav>
+              Queuing multiple shapes on a timeline
             </Link>
           </li>
           <li>
-            <Link href="/advanced/updating-timeline-playback">
-              <a className={ isActive('/advanced/updating-timeline-playback') ? 'selected' : '' }>
-                Updating timeline playback
-              </a>
+            <Link href="/advanced/updating-timeline-playback" nav subnav>
+              Updating timeline playback
             </Link>
           </li>
           <li>
-            <Link href="/advanced/timeline-events">
-              <a className={ isActive('/advanced/timeline-events') ? 'selected' : '' }>
-                Timeline events
-              </a>
+            <Link href="/advanced/timeline-events" nav subnav>
+              Timeline events
             </Link>
           </li>
           <li>
-            <Link href="/advanced/middleware">
-              <a className={ isActive('/advanced/middleware') ? 'selected' : '' }>
-                Middleware
-              </a>
+            <Link href="/advanced/middleware" nav subnav>
+              Middleware
             </Link>
           </li>
           <li>
-            <Link href="/advanced/forces">
-              <a className={ isActive('/advanced/forces') ? 'selected' : '' }>
-                Forces
-              </a>
+            <Link href="/advanced/forces" nav subnav>
+              Forces
             </Link>
           </li>
           <li>
-            <Link href="/advanced/motion-path">
-              <a className={ isActive('/advanced/motion-path') ? 'selected' : '' }>
-                Motion path
-              </a>
+            <Link href="/advanced/motion-path" nav subnav>
+              Motion path
             </Link>
           </li>
           <li>
-            <Link href="/advanced/development-v-production">
-              <a className={ isActive('/advanced/development-v-production') ? 'selected' : '' }>
-                Development v production
-              </a>
+            <Link href="/advanced/development-v-production" nav subnav>
+              Development v production
             </Link>
           </li>
         </ul>
       </li>
 
       <li>
-        <Link href="/api">
-          <a className={ isActive('/api') ? 'selected' : '' }>
-            API
-          </a>
+        <Link href="/api" nav>
+          API
         </Link>
 
         <ul>
           <li>
-            <Link href="/api/definitions">
-              <a className={ isActive('/api/definitions') ? 'selected' : '' }>
-                Definitions
-              </a>
+            <Link href="/api/definitions" nav subnav>
+              Definitions
             </Link>
           </li>
           <li>
-            <Link href="/api/the-shape-function">
-              <a className={ isActive('/api/the-shape-function') ? 'selected' : '' }>
-                The shape function
-              </a>
+            <Link href="/api/the-shape-function" nav subnav>
+              The shape function
             </Link>
           </li>
           <li>
-            <Link href="/api/the-render-function">
-              <a className={ isActive('/api/the-render-function') ? 'selected' : '' }>
-                The render function
-              </a>
+            <Link href="/api/the-render-function" nav subnav>
+              The render function
             </Link>
           </li>
           <li>
-            <Link href="/api/the-timeline-function">
-              <a className={ isActive('/api/the-timeline-function') ? 'selected' : '' }>
-                The timeline function
-              </a>
+            <Link href="/api/the-timeline-function" nav subnav>
+              The timeline function
             </Link>
           </li>
           <li>
-            <Link href="/api/the-play-function">
-              <a className={ isActive('/api/the-play-function') ? 'selected' : '' }>
-                The play function
-              </a>
+            <Link href="/api/the-play-function" nav subnav>
+              The play function
             </Link>
           </li>
           <li>
-            <Link href="/api/the-pause-function">
-              <a className={ isActive('/api/the-pause-function') ? 'selected' : '' }>
-                The pause function
-              </a>
+            <Link href="/api/the-pause-function" nav subnav>
+              The pause function
             </Link>
           </li>
         </ul>
