@@ -36,6 +36,17 @@ export default () => (
     </p>
 
     <p>
+      A Plain Shape Object can also be created on the fly by passing a DOM node
+      as the <Code inline>el</Code> property. For example, the following two
+      Shapes could be identicle:
+    </p>
+
+    <Code>{`
+      const shape1 = shape({ type: 'circle', cx: 10, cy: 10, r: 5, fill: 'yellow' })
+      const shape2 = shape({ el: document.querySelector('circle') })
+    `}</Code>
+
+    <p>
       <strong>
         <Code inline>options</Code>
       </strong> {' '}
@@ -47,7 +58,14 @@ export default () => (
     </p>
 
     <ul>
-      <li><Code inline>name</Code> <small>(optional)</small> is a string or number.</li>
+      <li>
+        <Code inline>name</Code> <small>(optional)</small> is a string or
+        number.
+      </li>
+      <li>
+        <Code inline>replace</Code> <small>(optional)</small> is a DOM node to
+        be replaced when this Shape is rendered.
+      </li>
     </ul>
 
     <Subtitle id="return-value">
