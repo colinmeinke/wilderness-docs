@@ -4,6 +4,8 @@ const border = {
   radius: 3
 }
 
+const breakpoint = 900
+
 const color = {
   primary: {
     main: 'hsl(80,30%,96%)',
@@ -42,4 +44,4 @@ const grid = {
   gutter: baseline * 3
 }
 
-export { border, color, font, grid }
+export { border, breakpoint, color, font, grid }

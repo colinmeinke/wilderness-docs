@@ -1,24 +1,75 @@
+import { breakpoint } from '../../config/style'
+import { Component } from 'react'
 import Head from 'next/head'
 import Nav from '../nav'
 import style, { globalStyle } from './style'
+import ToggleNav from '../toggle-nav'
 
-export default ({ children, title = 'Wilderness' }) => (
-  <div>
-    <Head>
-      <title>{ title }</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:400|Karla:400|Roboto+Mono:400"
-        rel="stylesheet"
-      />
-    </Head>
-    <div className="container">
-      <Nav />
-      <main>
-        { children }
-      </main>
-    </div>
-    <style jsx>{ style }</style>
-    <style jsx global>{ globalStyle }</style>
-  </div>
-)
+class Layout extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      navOpen: props.isServer
+        ? false
+        : window.navOpen === true && window.matchMedia(`(min-width: ${breakpoint}px)`).matches
+    }
+
+    this.toggleNav = this.toggleNav.bind(this)
+    this.focusNav = this.focusNav.bind(this)
+  }
+
+  toggleNav () {
+    const navOpen = !this.state.navOpen
+
+    this.setState({ navOpen })
+
+    if (!this.props.isServer) {
+      window.navOpen = navOpen
+    }
+  }
+
+  focusNav () {
+    this.setState({ navOpen: true })
+
+    if (!this.props.isServer) {
+      window.navOpen = true
+    }
+  }
+
+  render () {
+    return (
+      <div data-open={ this.state.navOpen }>
+        <Head>
+          <title>{ this.props.title }</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400|Karla:400|Roboto+Mono:400"
+            rel="stylesheet"
+          />
+        </Head>
+        <div className="container">
+          <div className="wrapper">
+            <Nav open={ this.state.navOpen } onFocus={ this.focusNav } />
+            <main>
+              <ToggleNav
+                handleClick={ this.toggleNav }
+                open={ this.state.navOpen }
+              />
+              { this.props.children }
+            </main>
+          </div>
+        </div>
+        <style jsx>{ style }</style>
+        <style jsx global>{ globalStyle }</style>
+      </div>
+    )
+  }
+}
+
+Layout.defaultProps = {
+  title: 'Wilderness',
+  isServer: typeof window === 'undefined'
+}
+
+export default Layout

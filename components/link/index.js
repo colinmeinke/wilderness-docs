@@ -1,10 +1,20 @@
 import style from './style'
 import { withRouter } from 'next/router'
 
-const Link = ({ button, children, href, nav, primary, router, secondary, subnav }) => {
+const Link = ({
+  button,
+  children,
+  href,
+  nav,
+  onFocus,
+  primary,
+  router,
+  secondary,
+  subnav
+}) => {
   const handleClick = e => {
     e.preventDefault()
-    router.push(href)
+    router.push(href).then(() => window.scrollTo(0, 0))
   }
 
   return (
@@ -17,8 +27,9 @@ const Link = ({ button, children, href, nav, primary, router, secondary, subnav 
         subnav ? 'subnav' : '',
         router.pathname === href ? 'selected' : ''
       ].filter(v => v).join(' ')}
-      href={href}
-      onClick={handleClick}
+      href={ href }
+      onClick={ handleClick }
+      onFocus={ onFocus }
     >
       { children }
       <style jsx>{ style }</style>

@@ -1,4 +1,4 @@
-import { border, color, font, grid } from '../../config/style'
+import { border, breakpoint, color, font, grid } from '../../config/style'
 
 export default `
   code,
@@ -29,7 +29,12 @@ export default `
 
   pre {
     margin-top: ${grid.baseline}px;
+    padding-left: 0;
     white-space: pre-wrap;
     word-wrap: break-word;
+  }
+
+  @media (min-width: ${breakpoint}px) {
+
   }
 `

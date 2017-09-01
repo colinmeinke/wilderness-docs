@@ -6,6 +6,6 @@ export default `
     font-size: ${font.size.xlarge}px;
     font-weight: normal;
     line-height: ${grid.baseline * 5}px;
-    margin-top: ${grid.baseline * 2}px;
+    margin-top: ${grid.baseline * 5}px;
   }
 `
