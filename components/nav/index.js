@@ -120,7 +120,7 @@ export default ({ onFocus }) => (
             </Link>
           </li>
           <li>
-            <Link href="/api/the-motionPath-function" nav subnav onFocus={ onFocus }>
+            <Link href="/api/the-motionpath-function" nav subnav onFocus={ onFocus }>
               The motionPath function
             </Link>
           </li>
