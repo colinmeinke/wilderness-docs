@@ -119,6 +119,16 @@ export default ({ onFocus }) => (
               The pause function
             </Link>
           </li>
+          <li>
+            <Link href="/api/the-motionPath-function" nav subnav onFocus={ onFocus }>
+              The motionPath function
+            </Link>
+          </li>
+          <li>
+            <Link href="/api/the-plainshapeobject-function" nav subnav onFocus={ onFocus }>
+              The plainShapeObject function
+            </Link>
+          </li>
         </ul>
       </li>
     </ul>
