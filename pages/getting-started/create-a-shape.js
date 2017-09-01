@@ -113,7 +113,7 @@ render(document.querySelector('svg'), circle)
     </p>
 
     <Code>{`
-      render(document.querySelector('svg'), shape1, shape2, shape3)
+render(document.querySelector('svg'), shape1, shape2, shape3)
     `}</Code>
 
     <Subtitle id="group-shapes">
