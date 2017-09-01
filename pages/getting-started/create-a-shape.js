@@ -20,7 +20,7 @@ export default () => (
     </p>
 
     <p>
-      Firstly, we need a way to define shapes - their type, dimensions and
+      Firstly, we need a way to define shapes &ndash; their type, dimensions and
       color. This is done with a basic javascript object, which in Wilderness
       we call a <Link href="/api/definitions#plain-shape-object">Plain Shape
       Object</Link>.

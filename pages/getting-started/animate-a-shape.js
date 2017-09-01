@@ -67,8 +67,8 @@ const morph = shape(keyframe1, keyframe2)
 
     <p>
       In the code above, we have created a Shape and assigned it to the
-      variable <Code inline>morph</Code>. The Shape has two Keyframes - a yellow
-      circle, and a red(ish) square.
+      variable <Code inline>morph</Code>. The Shape has two Keyframes &ndash; a
+      yellow circle, and a red square.
     </p>
 
     <p>
@@ -86,7 +86,7 @@ const morph = shape(keyframe1, keyframe2)
     </p>
 
     <p>
-      That isn't what we want, as we are attempting to create a dynamic Shape
+      That isn't what we want, as we are attempting to create a dynamic shape
       that morphs over time.
     </p>
 
@@ -233,9 +233,13 @@ play(animation, playbackOptions)
     </p>
 
     <p>
-      Take some time to experiment with what you've learned. When you're ready
-      to learn some of the more advanced concepts in Wilderness, we will take
-      a look at Timeline queuing.
+      That's the basics covered! Take some time to experiment with what you've
+      learned.
+    </p>
+
+    <p>
+      Next we're going to learn just how powerful Wilderness is, by exploring
+      some of its advanced features.
     </p>
 
     <Link href="/advanced" prefetch button>
