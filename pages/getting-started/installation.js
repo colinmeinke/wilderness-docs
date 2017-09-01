@@ -77,8 +77,16 @@ const { shape, timeline, render, play } = require('wilderness')
     </p>
 
     <p>
-      Add a <Code inline>script</Code> tag linking to the file into your HTML layout,
-      and you will then have access to the global <Code inline>Wilderness</Code> {' '}
+      Add a <Code inline>script</Code> tag linking to the file into your HTML
+      layout.
+    </p>
+
+    <Code>{`
+<script src="https://unpkg.com/wilderness/dist/wilderness.production.js"></script>
+    `}</Code>
+
+    <p>
+      You will then have access to the global <Code inline>Wilderness</Code> {' '}
       object.
     </p>
 
