@@ -14,7 +14,18 @@ const Link = ({
 }) => {
   const handleClick = e => {
     e.preventDefault()
-    router.push(href).then(() => window.scrollTo(0, 0))
+
+    const isLocal = href.indexOf('#') === 0
+
+    const url = isLocal
+      ? `${router.pathname}${href}`
+      : href
+
+    router.push(url).then(() => {
+      if (!isLocal) {
+        window.scrollTo(0, 0)
+      }
+    })
   }
 
   return (
