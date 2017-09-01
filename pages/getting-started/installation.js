@@ -26,7 +26,7 @@ export default () => (
     </p>
 
     <Code>{`
-      yarn add wilderness
+yarn add wilderness
     `}</Code>
 
     <p>
@@ -34,7 +34,7 @@ export default () => (
     </p>
 
     <Code>{`
-      npm --save wilderness
+npm --save wilderness
     `}</Code>
 
     <p>
@@ -47,7 +47,7 @@ export default () => (
     </Subtitle>
 
     <Code>{`
-      import { shape, timeline, render, play } from 'wilderness'
+import { shape, timeline, render, play } from 'wilderness'
     `}</Code>
 
     <Subtitle id="commonjs">
@@ -55,7 +55,7 @@ export default () => (
     </Subtitle>
 
     <Code>{`
-      const { shape, timeline, render, play } = require('wilderness')
+const { shape, timeline, render, play } = require('wilderness')
     `}</Code>
 
     <Subtitle id="umd">
@@ -83,10 +83,10 @@ export default () => (
     </p>
 
     <Code>{`
-      const shape = Wilderness.shape
-      const timeline = Wilderness.timeline
-      const render = Wilderness.render
-      const play = Wilderness.play
+const shape = Wilderness.shape
+const timeline = Wilderness.timeline
+const render = Wilderness.render
+const play = Wilderness.play
     `}</Code>
 
     <hr />

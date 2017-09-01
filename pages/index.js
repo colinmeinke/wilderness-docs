@@ -26,21 +26,21 @@ export default () => (
     </Subtitle>
 
     <Code>{`
-      import { shape, render, timeline, play } from 'wilderness'
+import { shape, render, timeline, play } from 'wilderness'
 
-      const morph = shape(
-        { el: document.querySelector('circle') },
-        { el: document.querySelector('rect') },
-      )
+const morph = shape(
+  { el: document.querySelector('circle') },
+  { el: document.querySelector('rect') },
+)
 
-      const animation = timeline(morph, {
-        iterations: Infinity,
-        alternate: true
-      })
+const animation = timeline(morph, {
+  iterations: Infinity,
+  alternate: true
+})
 
-      render(document.querySelector('svg'), animation)
+render(document.querySelector('svg'), animation)
 
-      play(animation)
+play(animation)
     `}</Code>
 
     <Link href="https://github.com/colinmeinke/wilderness" prefetch button primary>

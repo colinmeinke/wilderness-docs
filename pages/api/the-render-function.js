@@ -17,7 +17,7 @@ export default () => (
     </p>
 
     <Code>{`
-      render(parentNode, shapeOrTimeline1, shapeOrTimeline2, ...)
+render(parentNode, shapeOrTimeline1, shapeOrTimeline2, ...)
     `}</Code>
 
     <Subtitle id="arguments">

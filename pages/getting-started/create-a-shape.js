@@ -27,13 +27,13 @@ export default () => (
     </p>
 
     <Code>{`
-      const plainShapeObject = {
-        type: 'circle',
-        cx: 50,
-        cy: 50,
-        r: 20,
-        fill: 'yellow'
-      }
+const plainShapeObject = {
+  type: 'circle',
+  cx: 50,
+  cy: 50,
+  r: 20,
+  fill: 'yellow'
+}
     `}</Code>
 
     <p>
@@ -57,17 +57,17 @@ export default () => (
     </p>
 
     <Code>{`
-      import { shape } from 'wilderness'
+import { shape } from 'wilderness'
 
-      const plainShapeObject = {
-        type: 'circle',
-        cx: 50,
-        cy: 50,
-        r: 20,
-        fill: 'yellow'
-      }
+const plainShapeObject = {
+  type: 'circle',
+  cx: 50,
+  cy: 50,
+  r: 20,
+  fill: 'yellow'
+}
 
-      const circle = shape(plainShapeObject)
+const circle = shape(plainShapeObject)
     `}</Code>
 
     <p>
@@ -81,19 +81,19 @@ export default () => (
     </p>
 
     <Code>{`
-      import { shape, render } from 'wilderness'
+import { shape, render } from 'wilderness'
 
-      const plainShapeObject = {
-        type: 'circle',
-        cx: 50,
-        cy: 50,
-        r: 20,
-        fill: 'yellow'
-      }
+const plainShapeObject = {
+  type: 'circle',
+  cx: 50,
+  cy: 50,
+  r: 20,
+  fill: 'yellow'
+}
 
-      const circle = shape(plainShapeObject)
+const circle = shape(plainShapeObject)
 
-      render(document.querySelector('svg'), circle)
+render(document.querySelector('svg'), circle)
     `}</Code>
 
     <p>
@@ -132,40 +132,40 @@ export default () => (
     </p>
 
     <Code>{`
-      const plainShapeObject = {
-        type: 'g',
-        shapes: [
-          {
-            type: 'polygon',
-            points: '20 23 24 25 28 23 28 61 24 63 20 61',
-            fill: '#594E3F'
-          },
-          {
-            type: 'polygon',
-            points: '20 23 24 25 24 63 20 61',
-            fill: '#423A2F'
-          },
-          {
-            type: 'polygon',
-            points: '0 37 0 13 24 1 48 13 48 37 24 49',
-            fill: '#58A45A'
-          },
-          {
-            type: 'polygon',
-            points: '0 13 24 1 48 13 24 25',
-            fill: '#60B363'
-          },
-          {
-            type: 'polygon',
-            points: '0 13 24 25 24 49 0 37',
-            fill: '#4D8F4F'
-          }
-        ]
-      }
+const plainShapeObject = {
+  type: 'g',
+  shapes: [
+    {
+      type: 'polygon',
+      points: '20 23 24 25 28 23 28 61 24 63 20 61',
+      fill: '#594E3F'
+    },
+    {
+      type: 'polygon',
+      points: '20 23 24 25 24 63 20 61',
+      fill: '#423A2F'
+    },
+    {
+      type: 'polygon',
+      points: '0 37 0 13 24 1 48 13 48 37 24 49',
+      fill: '#58A45A'
+    },
+    {
+      type: 'polygon',
+      points: '0 13 24 1 48 13 24 25',
+      fill: '#60B363'
+    },
+    {
+      type: 'polygon',
+      points: '0 13 24 25 24 49 0 37',
+      fill: '#4D8F4F'
+    }
+  ]
+}
 
-      const tree = shape(plainShapeObject)
+const tree = shape(plainShapeObject)
 
-      render(document.querySelectorAll('svg'), tree)
+render(document.querySelectorAll('svg'), tree)
     `}</Code>
 
     <hr />

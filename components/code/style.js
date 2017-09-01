@@ -29,12 +29,16 @@ export default `
 
   pre {
     margin-top: ${grid.baseline}px;
-    padding-left: 0;
+    padding-left: ${grid.gutter / 2}px;
+    padding-right: ${grid.gutter / 2}px;
     white-space: pre-wrap;
     word-wrap: break-word;
   }
 
   @media (min-width: ${breakpoint}px) {
-
+    pre {
+      padding-left: ${grid.gutter}px;
+      padding-right: ${grid.gutter}px;
+    }
   }
 `

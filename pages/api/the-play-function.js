@@ -16,7 +16,7 @@ export default () => (
     </p>
 
     <Code>{`
-      play(timeline, options)
+play(timeline, options)
     `}</Code>
 
     <h2 id="arguments">

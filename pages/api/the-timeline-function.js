@@ -17,7 +17,7 @@ export default () => (
     </p>
 
     <Code>{`
-      timeline(shapeOrArray1, shapeOrArray2, ..., options)
+timeline(shapeOrArray1, shapeOrArray2, ..., options)
     `}</Code>
 
     <Subtitle id="arguments">
@@ -39,7 +39,7 @@ export default () => (
     </p>
 
     <Code>{`
-      [ shape, options ]
+[ shape, options ]
     `}</Code>
 
     <p>

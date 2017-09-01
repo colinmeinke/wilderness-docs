@@ -17,7 +17,7 @@ export default () => (
     </p>
 
     <Code>{`
-      shape(plainShapeObject1, plainShapeObject2, ..., options)
+shape(plainShapeObject1, plainShapeObject2, ..., options)
     `}</Code>
 
     <Subtitle id="arguments">
@@ -42,8 +42,8 @@ export default () => (
     </p>
 
     <Code>{`
-      const shape1 = shape({ type: 'circle', cx: 10, cy: 10, r: 5, fill: 'yellow' })
-      const shape2 = shape({ el: document.querySelector('circle') })
+const shape1 = shape({ type: 'circle', cx: 10, cy: 10, r: 5, fill: 'yellow' })
+const shape2 = shape({ el: document.querySelector('circle') })
     `}</Code>
 
     <p>

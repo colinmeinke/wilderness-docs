@@ -16,7 +16,7 @@ export default () => (
     </p>
 
     <Code>{`
-      pause(timeline, options)
+pause(timeline, options)
     `}</Code>
 
     <Subtitle id="arguments">
