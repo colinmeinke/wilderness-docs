@@ -15,6 +15,10 @@ export default `
     color: ${color.tertiary.contrast} !important;
   }
 
+  a:not(.button):not(.nav):focus code {
+    color: ${color.tertiary.main} !important;
+  }
+
   a:not(.button):not(.nav):hover {
     text-decoration: underline;
   }

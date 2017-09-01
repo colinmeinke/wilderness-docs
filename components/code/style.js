@@ -22,6 +22,12 @@ export default `
     line-height: inherit;
   }
 
+  .link code {
+    background-color: ${color.tertiary.main} !important;
+    border-color: ${color.tertiary.main} !important;
+    color: ${color.tertiary.contrast} !important;
+  }
+
   code {
     padding-left: ${grid.gutter / 8}px;
     padding-right: ${grid.gutter / 8}px;

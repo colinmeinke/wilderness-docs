@@ -34,15 +34,15 @@ export default () => (
     <p>
       It is created by passing one or more {' '}
       <Link href="#plain-shape-object">Plain Shape Objects</Link> to {' '}
-      <Link href="/api/the-shape-function"> the {' '} <Code inline>shape</Code>
+      <Link href="/api/the-shape-function"> the {' '} <Code inline link>shape</Code> {' '}
       function</Link>
     </p>
 
     <p>
       A Shape can be rendered with {' '}
-      <Link href="/api/the-render-function">the <Code inline>render</Code> {' '}
+      <Link href="/api/the-render-function">the <Code inline link>render</Code> {' '}
       function</Link> and placed on a timeline with {' '}
-      <Link href="/api/the-timeline-function">the <Code inline>timeline</Code> {' '}
+      <Link href="/api/the-timeline-function">the <Code inline link>timeline</Code> {' '}
       function</Link>.
     </p>
 
@@ -85,16 +85,16 @@ export default () => (
 
     <p>
       It is created by passing one or more Shapes to {' '}
-      <Link href="/api/the-timeline-function">the <Code inline>timeline</Code> {' '}
+      <Link href="/api/the-timeline-function">the <Code inline link>timeline</Code> {' '}
       function</Link>
     </p>
 
     <p>
       A Timeline can be rendered
-      with <Link href="/api/the-render-function">the <Code inline>render</Code> {' '}
+      with <Link href="/api/the-render-function">the <Code inline link>render</Code> {' '}
       function</Link>, played with the <Link href="/api/the-play-function">the
-      {' '} <Code inline>play</Code> function</Link> and paused with {' '}
-      <Link href="/api/the-pause-function">the <Code inline>pause</Code> {' '}
+      {' '} <Code inline link>play</Code> function</Link> and paused with {' '}
+      <Link href="/api/the-pause-function">the <Code inline link>pause</Code> {' '}
       function</Link>.
     </p>
   </Layout>
