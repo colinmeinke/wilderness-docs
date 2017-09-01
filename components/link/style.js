@@ -74,9 +74,9 @@ export default `
   }
 
   .button:not(.primary):not(.secondary):focus {
-    background-color: ${color.tertiary.contrast};
-    border-color: ${color.tertiary.main};
-    color: ${color.tertiary.main};
+    background-color: ${color.tertiary.contrast} !important;
+    border-color: ${color.tertiary.main} !important;
+    color: ${color.tertiary.main} !important;
   }
 
   .button:not(.primary):not(.secondary):hover {
@@ -91,9 +91,9 @@ export default `
   }
 
   .button.primary:focus {
-    background-color: ${color.primary.main};
-    border-color: ${color.primary.contrast};
-    color: ${color.primary.contrast};
+    background-color: ${color.primary.main} !important;
+    border-color: ${color.primary.contrast} !important;
+    color: ${color.primary.contrast} !important;
   }
 
   .button.primary:hover {
@@ -108,9 +108,9 @@ export default `
   }
 
   .button.secondary:focus {
-    background-color: ${color.secondary.alt};
-    border-color: ${color.secondary.contrast};
-    color: ${color.secondary.contrast};
+    background-color: ${color.secondary.alt} !important;
+    border-color: ${color.secondary.contrast} !important;
+    color: ${color.secondary.contrast} !important;
   }
 
   .button.secondary:hover {
