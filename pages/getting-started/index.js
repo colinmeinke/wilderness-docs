@@ -9,8 +9,8 @@ export default () => (
     </Title>
 
     <p>
-      The Wilderness API is simple, intuative and easy to learn. We can learn
-      the basics in under 10 minutes.
+      The Wilderness API is simple, intuative and easy to learn. The basics can
+      be learned in under 10 minutes.
     </p>
 
     <p>
