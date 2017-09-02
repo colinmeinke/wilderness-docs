@@ -4,6 +4,7 @@ import { withRouter } from 'next/router'
 const Link = ({
   button,
   children,
+  handleClick,
   handleFocus,
   handleRefresh,
   href,
@@ -13,7 +14,7 @@ const Link = ({
   secondary,
   subnav
 }) => {
-  const handleClick = e => {
+  const defaultHandleClick = e => {
     e.preventDefault()
 
     const isLocal = href.indexOf('#') === 0
@@ -33,6 +34,10 @@ const Link = ({
     })
   }
 
+  const click = typeof handleClick === 'function'
+    ? handleClick
+    : defaultHandleClick
+
   return (
     <a
       className={[
@@ -44,7 +49,7 @@ const Link = ({
         router.pathname === href ? 'selected' : ''
       ].filter(v => v).join(' ')}
       href={ href }
-      onClick={ handleClick }
+      onClick={ click }
       onFocus={ handleFocus }
     >
       { children }

@@ -1,9 +1,11 @@
 import ButtonGroup from '../../components/button-group'
+import CircleExample from '../../components/circle-example'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
 import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
+import TreeExample from '../../components/tree-example'
 
 export default () => (
   <Layout title="Create a shape with Wilderness">
@@ -31,14 +33,14 @@ export default () => (
 const plainShapeObject = {
   type: 'circle',
   cx: 50,
-  cy: 50,
-  r: 20,
-  fill: 'yellow'
+  cy: 10,
+  r: 10,
+  fill: '#DBF8A1'
 }
     `}</Code>
 
     <p>
-      The code above defines a yellow circle. However, as it's only a javascript
+      The code above defines a green circle. However, as it's only a javascript
       object, it isn't of much use on its own.
     </p>
 
@@ -63,9 +65,9 @@ import { shape } from 'wilderness'
 const plainShapeObject = {
   type: 'circle',
   cx: 50,
-  cy: 50,
-  r: 20,
-  fill: 'yellow'
+  cy: 10,
+  r: 10,
+  fill: '#DBF8A1'
 }
 
 const circle = shape(plainShapeObject)
@@ -87,15 +89,17 @@ import { shape, render } from 'wilderness'
 const plainShapeObject = {
   type: 'circle',
   cx: 50,
-  cy: 50,
-  r: 20,
-  fill: 'yellow'
+  cy: 10,
+  r: 10,
+  fill: '#DBF8A1'
 }
 
 const circle = shape(plainShapeObject)
 
 render(document.querySelector('svg'), circle)
     `}</Code>
+
+    <CircleExample />
 
     <p>
       Voila! We have created our first SVG shape, and added it to the DOM, with
@@ -138,28 +142,28 @@ const plainShapeObject = {
   shapes: [
     {
       type: 'polygon',
-      points: '20 23 24 25 28 23 28 61 24 63 20 61',
-      fill: '#594E3F'
+      points: '48 10 48 27 50 28 52 27 52 10 50 11',
+      fill: '#43473D'
     },
     {
       type: 'polygon',
-      points: '20 23 24 25 24 63 20 61',
-      fill: '#423A2F'
+      points: '48 10 48 27 50 28 50 11',
+      fill: '#34372F'
     },
     {
       type: 'polygon',
-      points: '0 37 0 13 24 1 48 13 48 37 24 49',
-      fill: '#58A45A'
+      points: '50 0 60 5 60 15 50 20 40 15 40 5',
+      fill: '#DBF8A1'
     },
     {
       type: 'polygon',
-      points: '0 13 24 1 48 13 24 25',
-      fill: '#60B363'
+      points: '60 5 60 15 50 20 50 10',
+      fill: '#CDE897'
     },
     {
       type: 'polygon',
-      points: '0 13 24 25 24 49 0 37',
-      fill: '#4D8F4F'
+      points: '50 10 50 20 40 15 40 5',
+      fill: '#BFD98D'
     }
   ]
 }
@@ -168,6 +172,8 @@ const tree = shape(plainShapeObject)
 
 render(document.querySelectorAll('svg'), tree)
     `}</Code>
+
+    <TreeExample />
 
     <hr />
 

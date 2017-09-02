@@ -2,6 +2,9 @@ import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import MorphExample from '../../components/morph-example'
+import MorphRenderExample from '../../components/morph-render-example'
+import MorphWithOptsExample from '../../components/morph-with-opts-example'
 import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
@@ -48,31 +51,29 @@ import { shape } from 'wilderness'
 
 const keyframe1 = {
   type: 'circle',
-  cx: 50,
-  cy: 50,
-  r: 20,
-  fill: 'yellow'
+  cx: 10,
+  cy: 10,
+  r: 10,
+  fill: '#DBF8A1'
 }
 
 const keyframe2 = {
   type: 'rect',
-  x: 30,
-  y: 30,
-  width: 40,
-  height: 40,
-  fill: 'rgb(238,85,68)',
+  x: 80,
+  y: 0,
+  width: 20,
+  height: 20,
+  fill: '#1F9FFD',
   duration: 2000
 }
 
 const morph = shape(keyframe1, keyframe2)
     `}</Code>
 
-
-
     <p>
       In the code above, we have created a Shape and assigned it to the
       variable <Code inline>morph</Code>. The Shape has two Keyframes &ndash; a
-      yellow circle, and a red square.
+      green circle, and a blue square.
     </p>
 
     <p>
@@ -113,19 +114,19 @@ import { shape, render, timeline } from 'wilderness'
 
 const keyframe1 = {
   type: 'circle',
-  cx: 50,
-  cy: 50,
-  r: 20,
-  fill: 'yellow'
+  cx: 10,
+  cy: 10,
+  r: 10,
+  fill: '#DBF8A1'
 }
 
 const keyframe2 = {
   type: 'rect',
-  x: 30,
-  y: 30,
-  width: 40,
-  height: 40,
-  fill: 'rgb(238,85,68)',
+  x: 80,
+  y: 0,
+  width: 20,
+  height: 20,
+  fill: '#1F9FFD',
   duration: 2000
 }
 
@@ -135,6 +136,8 @@ const animation = timeline(morph)
 
 render(document.querySelectorAll('svg'), animation)
     `}</Code>
+
+    <MorphRenderExample />
 
     <p>
       This time, instead of passing a Shape to the <Code inline>render</Code>
@@ -156,19 +159,19 @@ import { shape, render, timeline, play } from 'wilderness'
 
 const keyframe1 = {
   type: 'circle',
-  cx: 50,
-  cy: 50,
-  r: 20,
-  fill: 'yellow'
+  cx: 10,
+  cy: 10,
+  r: 10,
+  fill: '#DBF8A1'
 }
 
 const keyframe2 = {
   type: 'rect',
-  x: 30,
-  y: 30,
-  width: 40,
-  height: 40,
-  fill: 'rgb(238,85,68)',
+  x: 80,
+  y: 0,
+  width: 20,
+  height: 20,
+  fill: '#1F9FFD',
   duration: 2000
 }
 
@@ -180,6 +183,8 @@ render(document.querySelectorAll('svg'), animation)
 
 play(animation)
     `}</Code>
+
+    <MorphExample />
 
     <Subtitle id="setting-playback-options">
       Setting playback options
@@ -202,19 +207,19 @@ import { shape, render, timeline, play } from 'wilderness'
 
 const keyframe1 = {
   type: 'circle',
-  cx: 50,
-  cy: 50,
-  r: 20,
-  fill: 'yellow'
+  cx: 10,
+  cy: 10,
+  r: 10,
+  fill: '#DBF8A1'
 }
 
 const keyframe2 = {
   type: 'rect',
-  x: 30,
-  y: 30,
-  width: 40,
-  height: 40,
-  fill: 'rgb(238,85,68)',
+  x: 80,
+  y: 0,
+  width: 20,
+  height: 20,
+  fill: '#1F9FFD',
   duration: 2000
 }
 
@@ -231,6 +236,8 @@ render(document.querySelectorAll('svg'), animation)
 
 play(animation, playbackOptions)
     `}</Code>
+
+    <MorphWithOptsExample />
 
     <hr />
 
