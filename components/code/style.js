@@ -37,8 +37,9 @@ export default `
     margin-top: ${grid.baseline}px;
     padding-left: ${grid.gutter / 2}px;
     padding-right: ${grid.gutter / 2}px;
-    white-space: pre-wrap;
+    word-break: break-all;
     word-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   @media (min-width: ${breakpoint}px) {
