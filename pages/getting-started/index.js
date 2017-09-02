@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
 import Title from '../../components/title'
@@ -19,8 +20,10 @@ export default () => (
       first need to install Wilderness.
     </p>
 
-    <Link href="/getting-started/installation" prefetch button>
-      First up: Installation
-    </Link>
+    <ButtonGroup>
+      <Link href="/getting-started/installation" prefetch button>
+        First up: Installation
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

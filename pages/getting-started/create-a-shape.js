@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -175,8 +176,10 @@ render(document.querySelectorAll('svg'), tree)
       Next up let's learn how to animate a shape!
     </p>
 
-    <Link href="/getting-started/animate-a-shape" prefetch button>
-      Next lesson: Animate a shape
-    </Link>
+    <ButtonGroup>
+      <Link href="/getting-started/animate-a-shape" prefetch button>
+        Next lesson: Animate a shape
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

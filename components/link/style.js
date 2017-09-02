@@ -62,13 +62,13 @@ export default `
     border-style: solid;
     border-width: 3px;
     display: inline-block;
-    margin-top: ${grid.baseline * 3}px;
+    margin-top: ${grid.baseline}px;
     padding: ${grid.baseline - 3}px ${grid.gutter}px;
     text-decoration: none;
   }
 
-  .button + .button {
-    margin-left: ${grid.gutter / 4}px;
+  .button:not(:last-child) {
+    margin-right: ${grid.gutter / 4}px;
   }
 
   .button:not(.primary):not(.secondary) {

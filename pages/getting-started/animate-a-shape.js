@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -242,8 +243,10 @@ play(animation, playbackOptions)
       some of its advanced features.
     </p>
 
-    <Link href="/advanced" prefetch button>
-      Next lesson: Advanced features
-    </Link>
+    <ButtonGroup>
+      <Link href="/advanced" prefetch button>
+        Next lesson: Advanced features
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

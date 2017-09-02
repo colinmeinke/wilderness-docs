@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -104,8 +105,10 @@ const play = Wilderness.play
       how to use it!
     </p>
 
-    <Link href="/getting-started/create-a-shape" prefetch button>
-      Next lesson: Create a shape
-    </Link>
+    <ButtonGroup>
+      <Link href="/getting-started/create-a-shape" prefetch button>
+        Next lesson: Create a shape
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

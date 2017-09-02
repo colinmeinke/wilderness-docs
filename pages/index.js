@@ -1,3 +1,4 @@
+import ButtonGroup from '../components/button-group'
 import Code from '../components/code'
 import { color, grid } from '../config/style'
 import Layout from '../components/layout'
@@ -43,12 +44,14 @@ render(document.querySelector('svg'), animation)
 play(animation)
     `}</Code>
 
-    <Link href="https://github.com/colinmeinke/wilderness" prefetch button primary>
-      View on Github
-    </Link>
+    <ButtonGroup>
+      <Link href="https://github.com/colinmeinke/wilderness" prefetch button primary>
+        View on Github
+      </Link>
 
-    <Link href="/getting-started" prefetch button>
-      Learn Wilderness
-    </Link>
+      <Link href="/getting-started" prefetch button>
+        Learn Wilderness
+      </Link>
+    </ButtonGroup>
   </Layout>
 )
