@@ -65,11 +65,11 @@ export default ({ handleFocus, handleRefresh }) => (
       <li>
         <Link
           nav
-          href="/advanced"
+          href="/advanced-features"
           handleFocus={ handleFocus }
           handleRefresh={ handleRefresh }
         >
-          Advanced
+          Advanced features
         </Link>
 
         <ul>
@@ -77,7 +77,7 @@ export default ({ handleFocus, handleRefresh }) => (
             <Link
               nav
               subnav
-              href="/advanced/creating-shapes-from-existing-dom-nodes"
+              href="/advanced-features/creating-shapes-from-existing-dom-nodes"
               handleFocus={ handleFocus }
               handleRefresh={ handleRefresh }
             >
@@ -88,7 +88,7 @@ export default ({ handleFocus, handleRefresh }) => (
             <Link
               nav
               subnav
-              href="/advanced/queuing-multiple-shapes-on-a-timeline"
+              href="/advanced-features/queuing-multiple-shapes-on-a-timeline"
               handleFocus={ handleFocus }
               handleRefresh={ handleRefresh }
             >
@@ -99,7 +99,7 @@ export default ({ handleFocus, handleRefresh }) => (
             <Link
               nav
               subnav
-              href="/advanced/updating-timeline-playback"
+              href="/advanced-features/updating-timeline-playback"
               handleFocus={ handleFocus }
               handleRefresh={ handleRefresh }
             >
@@ -110,7 +110,7 @@ export default ({ handleFocus, handleRefresh }) => (
             <Link
               nav
               subnav
-              href="/advanced/timeline-events"
+              href="/advanced-features/timeline-events"
               handleFocus={ handleFocus }
               handleRefresh={ handleRefresh }
             >
@@ -121,7 +121,7 @@ export default ({ handleFocus, handleRefresh }) => (
             <Link
               nav
               subnav
-              href="/advanced/middleware"
+              href="/advanced-features/middleware"
               handleFocus={ handleFocus }
               handleRefresh={ handleRefresh }
             >
@@ -132,7 +132,7 @@ export default ({ handleFocus, handleRefresh }) => (
             <Link
               nav
               subnav
-              href="/advanced/forces"
+              href="/advanced-features/forces"
               handleFocus={ handleFocus }
               handleRefresh={ handleRefresh }
             >
@@ -143,7 +143,7 @@ export default ({ handleFocus, handleRefresh }) => (
             <Link
               nav
               subnav
-              href="/advanced/motion-path"
+              href="/advanced-features/motion-path"
               handleFocus={ handleFocus }
               handleRefresh={ handleRefresh }
             >
@@ -154,7 +154,7 @@ export default ({ handleFocus, handleRefresh }) => (
             <Link
               nav
               subnav
-              href="/advanced/development-v-production"
+              href="/advanced-features/development-v-production"
               handleFocus={ handleFocus }
               handleRefresh={ handleRefresh }
             >

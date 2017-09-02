@@ -3,7 +3,7 @@ import Title from '../../components/title'
 
 export default () => (
   <Layout title="Coming soon">
-    <Title>Advanced</Title>
+    <Title>Advanced features</Title>
     <p>Documentation coming soon</p>
   </Layout>
 )

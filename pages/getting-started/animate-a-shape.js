@@ -12,14 +12,15 @@ export default () => (
     </Title>
 
     <p>
-      In the previous lesson we learned how
-      to <Link href="/getting-started/create-a-shape">create a shape</Link>
-      {' '} using the <Code inline>shape</Code> and <Code inline>render</Code> functions.
+      In the previous lesson we learned how to {' '}
+      <Link href="/getting-started/create-a-shape">create a shape</Link> {' '}
+      using the <Code inline>shape</Code> and <Code inline>render</Code> {' '}
+      functions.
     </p>
 
     <p>
-      Now we are going to learn how to animate a shape using
-      the <Code inline>timeline</Code> and <Code inline>play</Code> functions.
+      Now we are going to learn how to animate a shape using the {' '}
+      <Code inline>timeline</Code> and <Code inline>play</Code> functions.
     </p>
 
     <Subtitle id="creating-keyframes">
@@ -37,9 +38,9 @@ export default () => (
     </p>
 
     <p>
-      Each Plain Shape Object that we pass as an argument to
-      the <Code inline>shape</Code> function will create a
-      Shape <Link href="/api/definitions#keyframe">Keyframe</Link>.
+      Each Plain Shape Object that we pass as an argument to the {' '}
+      <Code inline>shape</Code> function will create a {' '}
+      <Link href="/api/definitions#keyframe">Keyframe</Link>.
     </p>
 
     <Code>{`
@@ -66,6 +67,8 @@ const keyframe2 = {
 const morph = shape(keyframe1, keyframe2)
     `}</Code>
 
+
+
     <p>
       In the code above, we have created a Shape and assigned it to the
       variable <Code inline>morph</Code>. The Shape has two Keyframes &ndash; a
@@ -73,8 +76,15 @@ const morph = shape(keyframe1, keyframe2)
     </p>
 
     <p>
+      Later, when we we add <Code inline>morph</Code> to a {' '}
+      <Link href="/api/definitions#timeline">Timeline</Link> and start playback,
+      the Shape will animate from a circle (Keyframe 1), to a rectangle
+      (Keyframe 2).
+    </p>
+
+    <p>
       These two Keyframes are spaced 2000 milliseconds apart, as we have set
-      a <Code inline>duration</Code> property on <Code inline>keyframe2</Code>.
+      a <Code inline>duration</Code> property on Keyframe 1.
     </p>
 
     <Subtitle id="creating-a-timeline">
@@ -82,24 +92,20 @@ const morph = shape(keyframe1, keyframe2)
     </Subtitle>
 
     <p>
-      If we went ahead and rendered our Shape at this point, it would be
-      rendered as a static shape at its first Keyframe.
+      If we went ahead and rendered our Shape at this point, without first
+      adding it to a Timeline, it would be rendered as a static shape at its
+      first Keyframe.
     </p>
 
     <p>
-      That isn't what we want, as we are attempting to create a dynamic shape
-      that morphs over time.
-    </p>
-
-    <p>
-      First we need to create
-      a <Link href="/api/definitions#timeline">Timeline</Link> using the {' '}
+      However, our aim is to create a dynamic shape that animates over time. In
+      Wilderness can achive this by creating a Timeline using the {' '}
       <Code inline>timeline</Code> function.
     </p>
 
     <p>
       At its most basic, the <Code inline>timeline</Code> function takes a single
-      argument - a Shape.
+      argument &ndash; a Shape.
     </p>
 
     <Code>{`
@@ -131,9 +137,9 @@ render(document.querySelectorAll('svg'), animation)
     `}</Code>
 
     <p>
-      Instead of passing the <Code inline>render</Code> function our Shape, we pass
-      it our Timeline (that we have assigned to the
-      variable <Code inline>animation</Code>).
+      This time, instead of passing a Shape to the <Code inline>render</Code>
+      {' '} function, we pass it our newly created Timeline (that we have
+      assigned to the variable <Code inline>animation</Code>).
     </p>
 
     <Subtitle id="#playing-a-timeline">
@@ -187,8 +193,8 @@ play(animation)
 
     <p>
       Below, we use this feature to instruct our <Code inline>play</Code> function to
-      iterate the Timeline infinitely, and to alternate direction every time
-      an iteration completes.
+      iterate the Timeline infinitely, and to alternate playback direction every
+      time an iteration completes.
     </p>
 
     <Code>{`
@@ -229,22 +235,22 @@ play(animation, playbackOptions)
     <hr />
 
     <p>
-      With just a few simple lines of code we have created our first animation
-      with Wilderness. I think we can all be pretty proud of ourselves!
+      With just a few lines of code we have created our first animation with
+      Wilderness.
     </p>
 
     <p>
-      That's the basics covered! Take some time to experiment with what you've
-      learned.
+      That's the basics covered! I think we can all be pretty proud of
+      ourselves! Take some time to experiment with what you've learned.
     </p>
 
     <p>
-      Next we're going to learn just how powerful Wilderness is, by exploring
-      some of its advanced features.
+      When you're ready to continue, next we will learn just how powerful
+      Wilderness is, by exploring some of its advanced features.
     </p>
 
     <ButtonGroup>
-      <Link href="/advanced" prefetch button>
+      <Link href="/advanced-features" prefetch button>
         Next lesson: Advanced features
       </Link>
     </ButtonGroup>

@@ -38,8 +38,8 @@ const plainShapeObject = {
     `}</Code>
 
     <p>
-      The code above defines a yellow circle. However, as it's only a
-      javascript object, it isn't of much use on its own.
+      The code above defines a yellow circle. However, as it's only a javascript
+      object, it isn't of much use on its own.
     </p>
 
     <p>
@@ -47,14 +47,14 @@ const plainShapeObject = {
     </p>
 
     <p>
-      The job of the <Code inline>shape</Code> function is to create
-      a <Link href="/api/definitions#shape">Shape</Link>. A Shape can be
-      rendered, placed on a timeline, and animated.
+      The job of the <Code inline>shape</Code> function is to create a {' '}
+      <Link href="/api/definitions#shape">Shape</Link>. A Shape can be rendered,
+      placed on a timeline, and animated.
     </p>
 
     <p>
-      At its most basic, the <Code inline>shape</Code> function takes a Plain Shape
-      Object as a single argument.
+      At its most basic, the <Code inline>shape</Code> function takes a Plain
+      Shape Object as a single argument.
     </p>
 
     <Code>{`
@@ -72,13 +72,13 @@ const circle = shape(plainShapeObject)
     `}</Code>
 
     <p>
-      We've now created our first Shape, and assigned it to a variable
-      named <Code inline>circle</Code>. Pretty simple so far, right?
+      We've now created our first Shape, and assigned it to a variable named
+      {' '} <Code inline>circle</Code>. Pretty simple so far, right?
     </p>
 
     <p>
-      This Shape can be rendered to an HTML page using
-      the <Code inline>render</Code> function.
+      This Shape can be rendered to an HTML page using the {' '}
+      <Code inline>render</Code> function.
     </p>
 
     <Code>{`
@@ -98,19 +98,19 @@ render(document.querySelector('svg'), circle)
     `}</Code>
 
     <p>
-      Voila! We have created our first SVG shape, and added it to the DOM,
-      with Wilderness.
+      Voila! We have created our first SVG shape, and added it to the DOM, with
+      Wilderness.
     </p>
 
     <p>
-      You will notice that the <Code inline>render</Code> function's first argument
-      is a DOM node. This is the parent node to which we wish to append our
-      circle.
+      You will notice that the <Code inline>render</Code> function's first
+      argument is a DOM node. This is the parent node to which we wish to append
+      our circle.
     </p>
 
     <p>
-      If we wanted to render multiple Shapes, we simply add additional
-      arguments to the <Code inline>render</Code> function.
+      If we want to render multiple Shapes, we simply add additional arguments
+      to the <Code inline>render</Code> function.
     </p>
 
     <Code>{`
@@ -122,9 +122,9 @@ render(document.querySelector('svg'), shape1, shape2, shape3)
     </Subtitle>
 
     <p>
-      The process to create group shapes is identical to that of a single
-      shape. The only difference is that our Plain Shape Object should follow
-      the <Link href="https://github.com/colinmeinke/svg-points#g">SVG points
+      The process to create group shapes is identical to that of a single shape.
+      The only difference is that our Plain Shape Object should follow the {' '}
+      <Link href="https://github.com/colinmeinke/svg-points#g">SVG points
       specification for group shapes</Link>.
     </p>
 

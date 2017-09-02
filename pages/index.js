@@ -48,7 +48,12 @@ play(animation)
     `}</Code>
 
     <ButtonGroup>
-      <Link href="https://github.com/colinmeinke/wilderness" prefetch button primary>
+      <Link
+        href="https://github.com/colinmeinke/wilderness"
+        prefetch
+        button
+        primary
+      >
         View on Github
       </Link>
 
