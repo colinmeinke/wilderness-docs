@@ -4,9 +4,10 @@ import { withRouter } from 'next/router'
 const Link = ({
   button,
   children,
+  handleFocus,
+  handleRefresh,
   href,
   nav,
-  onFocus,
   primary,
   router,
   secondary,
@@ -20,6 +21,10 @@ const Link = ({
     const url = isLocal
       ? `${router.pathname}${href}`
       : href
+
+    if (router.pathname === href && typeof handleRefresh === 'function') {
+      handleRefresh()
+    }
 
     router.push(url).then(() => {
       if (!isLocal) {
@@ -40,7 +45,7 @@ const Link = ({
       ].filter(v => v).join(' ')}
       href={ href }
       onClick={ handleClick }
-      onFocus={ onFocus }
+      onFocus={ handleFocus }
     >
       { children }
       <style jsx>{ style }</style>
