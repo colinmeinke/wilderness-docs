@@ -9,6 +9,6 @@ export default `
   }
 
   h2:not(:first-child) {
-    margin-top: ${grid.baseline * 2}px;
+    margin-top: ${grid.baseline * 5}px;
   }
 `

@@ -1,5 +1,6 @@
 import { breakpoint } from '../../config/style'
 import { Component } from 'react'
+import Footer from '../footer'
 import Head from 'next/head'
 import Nav from '../nav'
 import style, { globalStyle } from './style'
@@ -11,11 +12,14 @@ class Layout extends Component {
     super(props)
 
     this.state = {
-      navOpen: props.isServer
-        ? typeof props.router.query.nav !== 'undefined'
+      navOpen: typeof props.router.query.nav !== 'undefined' || (props.isServer
+        ? false
         : window.navOpen === true &&
           window.matchMedia(`(min-width: ${breakpoint}px)`).matches
+      )
     }
+
+    this.state.navOpen
 
     this.toggleNav = this.toggleNav.bind(this)
     this.focusNav = this.focusNav.bind(this)
@@ -76,6 +80,7 @@ class Layout extends Component {
                 open={ this.state.navOpen }
               />
               { this.props.children }
+              <Footer />
             </main>
           </div>
         </div>

@@ -15,23 +15,25 @@ const Link = ({
   subnav
 }) => {
   const defaultHandleClick = e => {
-    e.preventDefault()
+    if (href.indexOf('http') === -1) {
+      e.preventDefault()
 
-    const isLocal = href.indexOf('#') === 0
+      const isHash = href.indexOf('#') === 0
 
-    const url = isLocal
-      ? `${router.pathname}${href}`
-      : href
+      const url = isHash
+        ? `${router.pathname}${href}`
+        : href
 
-    if (router.pathname === href && typeof handleRefresh === 'function') {
-      handleRefresh()
-    }
-
-    router.push(url).then(() => {
-      if (!isLocal) {
-        window.scrollTo(0, 0)
+      if (router.pathname === href && typeof handleRefresh === 'function') {
+        handleRefresh()
       }
-    })
+
+      router.push(url).then(() => {
+        if (!isLocal) {
+          window.scrollTo(0, 0)
+        }
+      })
+    }
   }
 
   const click = typeof handleClick === 'function'
