@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Nav from '../nav'
 import style, { globalStyle } from './style'
 import ToggleNav from '../toggle-nav'
+import { withRouter } from 'next/router'
 
 class Layout extends Component {
   constructor (props) {
@@ -11,7 +12,7 @@ class Layout extends Component {
 
     this.state = {
       navOpen: props.isServer
-        ? false
+        ? typeof props.router.query.nav !== 'undefined'
         : window.navOpen === true &&
           window.matchMedia(`(min-width: ${breakpoint}px)`).matches
     }
@@ -21,7 +22,9 @@ class Layout extends Component {
     this.hideNav = this.hideNav.bind(this)
   }
 
-  toggleNav () {
+  toggleNav (e) {
+    e.preventDefault()
+
     const navOpen = !this.state.navOpen
 
     this.setState({ navOpen })
@@ -88,4 +91,4 @@ Layout.defaultProps = {
   isServer: typeof window === 'undefined'
 }
 
-export default Layout
+export default withRouter(Layout)

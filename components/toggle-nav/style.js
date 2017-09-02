@@ -1,10 +1,7 @@
 import { color, grid } from '../../config/style'
 
 export default `
-  button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  a {
     left: ${grid.gutter / 2}px;
     outline: none;
     padding: 0;

@@ -1,8 +1,8 @@
 import style from './style'
 
 export default ({ handleClick, open }) => (
-  <button
-    type="button"
+  <a
+    href="?nav=open"
     onClick={ handleClick }
     data-open={ open }
   >
@@ -10,5 +10,5 @@ export default ({ handleClick, open }) => (
     <span></span>
     <span></span>
     <style jsx>{ style }</style>
-  </button>
+  </a>
 )
