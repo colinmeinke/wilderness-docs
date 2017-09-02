@@ -245,8 +245,8 @@ play(animation, playbackOptions)
     </p>
 
     <p>
-      When you're ready to continue, next we will learn just how powerful
-      Wilderness is, by exploring some of its advanced features.
+      When you're ready to continue, we will learn just how powerful Wilderness
+      is, by exploring some of its advanced features.
     </p>
 
     <ButtonGroup>
