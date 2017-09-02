@@ -8,7 +8,10 @@ import Title from '../components/title'
 
 export default () => (
   <Layout title="Wilderness - An SVG animation API">
-    <Title>Wilderness is an SVG animation API</Title>
+    <Title>
+      <strong>Wilderness.</strong><br />
+      an SVG animation API
+    </Title>
 
     <Subtitle>
       Summary
