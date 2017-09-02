@@ -81,6 +81,7 @@ class Layout extends Component {
         </div>
         <style jsx>{ style }</style>
         <style jsx global>{ globalStyle }</style>
+        <script src="/static/wilderness.production.js"></script>
       </div>
     )
   }

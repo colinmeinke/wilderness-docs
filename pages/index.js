@@ -1,6 +1,7 @@
 import ButtonGroup from '../components/button-group'
 import Code from '../components/code'
 import { color, grid } from '../config/style'
+import HelloWorldExample from '../components/hello-world-example'
 import Layout from '../components/layout'
 import Link from '../components/link'
 import Subtitle from '../components/subtitle'
@@ -38,6 +39,7 @@ const morph = shape(
 )
 
 const animation = timeline(morph, {
+  duration: 2000,
   iterations: Infinity,
   alternate: true
 })
@@ -46,6 +48,8 @@ render(document.querySelector('svg'), animation)
 
 play(animation)
     `}</Code>
+
+    <HelloWorldExample />
 
     <ButtonGroup>
       <Link
