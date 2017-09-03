@@ -29,7 +29,7 @@ const Link = ({
       }
 
       router.push(url).then(() => {
-        if (!isLocal) {
+        if (!isHash) {
           window.scrollTo(0, 0)
         }
       })
