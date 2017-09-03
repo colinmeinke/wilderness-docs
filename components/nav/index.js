@@ -90,11 +90,11 @@ export default ({ handleFocus, handleRefresh, handleSwipe }) => {
               <Link
                 nav
                 subnav
-                href="/advanced-features/creating-shapes-from-existing-dom-nodes"
+                href="/advanced-features/create-a-shape-from-an-existing-dom-node"
                 handleFocus={ handleFocus }
                 handleRefresh={ handleRefresh }
               >
-                Creating shapes from existing DOM nodes
+                Create a shape from an existing DOM node
               </Link>
             </li>
             <li>
@@ -128,6 +128,17 @@ export default ({ handleFocus, handleRefresh, handleSwipe }) => {
                 handleRefresh={ handleRefresh }
               >
                 Timeline events
+              </Link>
+            </li>
+            <li>
+              <Link
+                nav
+                subnav
+                href="/advanced-features/transforms"
+                handleFocus={ handleFocus }
+                handleRefresh={ handleRefresh }
+              >
+                Transforms
               </Link>
             </li>
             <li>

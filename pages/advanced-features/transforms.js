@@ -3,7 +3,7 @@ import Title from '../../components/title'
 
 export default () => (
   <Layout title="Coming soon">
-    <Title>Creating shapes from existing DOM nodes</Title>
+    <Title>Transforms</Title>
     <p>Documentation coming soon</p>
   </Layout>
 )
