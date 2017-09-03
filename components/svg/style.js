@@ -6,7 +6,7 @@ export default `
     border-radius: ${border.radius}px;
     box-sizing: border-box;
     height: auto;
-    margin-top: ${grid.baseline}px;
+    margin-top: ${grid.baseline * 2}px;
     padding: ${grid.baseline * 2 - 1}px ${grid.gutter}px;
     width: 100%;
   }

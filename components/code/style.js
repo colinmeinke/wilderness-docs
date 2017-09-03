@@ -34,7 +34,7 @@ export default `
   }
 
   pre {
-    margin-top: ${grid.baseline}px;
+    margin-top: ${grid.baseline * 2}px;
     padding-left: ${grid.gutter / 2}px;
     padding-right: ${grid.gutter / 2}px;
     word-break: break-all;
