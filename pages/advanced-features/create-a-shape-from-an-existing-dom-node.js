@@ -83,7 +83,7 @@ render(document.querySelector('svg'), circle)
     `}</Code>
 
     <Subtitle>
-      Replacing an existing DOM node
+      Replace an existing DOM node
     </Subtitle>
 
     <p>
