@@ -24,6 +24,7 @@ class Layout extends Component {
     this.toggleNav = this.toggleNav.bind(this)
     this.focusNav = this.focusNav.bind(this)
     this.hideNav = this.hideNav.bind(this)
+    this.hideNavSmallScreens = this.hideNavSmallScreens.bind(this)
   }
 
   toggleNav (e) {
@@ -47,6 +48,10 @@ class Layout extends Component {
   }
 
   hideNav () {
+    this.setState({ navOpen: false })
+  }
+
+  hideNavSmallScreens () {
     this.setState({
       navOpen: window.navOpen === true &&
         window.matchMedia(`(min-width: ${breakpoint}px)`).matches
@@ -72,7 +77,8 @@ class Layout extends Component {
             <Nav
               open={ this.state.navOpen }
               handleFocus={ this.focusNav }
-              handleRefresh={ this.hideNav }
+              handleRefresh={ this.hideNavSmallScreens }
+              handleSwipe={ this.hideNav }
             />
             <main>
               <ToggleNav
