@@ -6,7 +6,7 @@ export default () => (
     <hr />
 
     <p>
-      🏕 Made by <Link href="https://colinmeinke.com">Colin Meinke</Link>
+      ⛺ Made by <Link href="https://colinmeinke.com">Colin Meinke</Link>
     </p>
 
     <style jsx>{ style }</style>
