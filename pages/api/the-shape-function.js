@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -5,7 +6,7 @@ import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
-  <Layout title="The Wilderness shape function">
+  <Layout title="Wilderness shape function">
     <Title>
       The <Code inline inherit>shape</Code> function
     </Title>
@@ -75,5 +76,15 @@ const shape2 = shape({ el: document.querySelector('circle') })
     <p>
       A Shape.
     </p>
+
+    <ButtonGroup>
+      <Link href="/getting-started/create-a-shape" button primary>
+        Lesson: Create a shape
+      </Link>
+
+      <Link href="/api/the-render-function" button>
+        Next up: The render function
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

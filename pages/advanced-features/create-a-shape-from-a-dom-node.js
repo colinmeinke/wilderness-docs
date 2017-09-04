@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -6,9 +7,9 @@ import Title from '../../components/title'
 import DomNodeExample from '../../components/dom-node-example'
 
 export default () => (
-  <Layout title="Create a shape from an existing DOM node in Wilderness">
+  <Layout title="Create a shape from a DOM node with Wilderness">
     <Title>
-      Create a shape from an existing DOM node
+      Create a shape from a DOM node
     </Title>
 
     <p>
@@ -17,7 +18,7 @@ export default () => (
 
     <p>
       Luckily for us, Wilderness can create {' '}
-      <Link href="/api/definitions#shape">Shapes</Link> from existing DOM nodes.
+      <Link href="/api/definitions#shape">Shapes</Link> from DOM nodes.
     </p>
 
     <p>
@@ -119,5 +120,11 @@ render(svg, circleClone)
       This time, our cloned circle will replace the existing DOM node when
       rendered, instead of being appended alongside it.
     </p>
+
+    <ButtonGroup>
+      <Link href="/advanced-features/timeline-queuing" button>
+        Next lesson: Timeline queuing
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

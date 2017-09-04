@@ -4,9 +4,9 @@ import Link from '../../components/link'
 import Title from '../../components/title'
 
 export default () => (
-  <Layout title="Updating timeline playback with Wilderness">
+  <Layout title="Timeline queuing with Wilderness">
     <Title>
-      Updating timeline playback
+      Timeline queuing
     </Title>
 
     <p>
@@ -14,8 +14,8 @@ export default () => (
     </p>
 
     <ButtonGroup>
-      <Link href="/advanced-features/transforms" button>
-        Next lesson: Transforms
+      <Link href="/advanced-features/timeline-events" button>
+        Next lesson: Timeline events
       </Link>
     </ButtonGroup>
   </Layout>

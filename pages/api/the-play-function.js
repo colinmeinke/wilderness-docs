@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -5,7 +6,7 @@ import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
-  <Layout title="The Wilderness play function">
+  <Layout title="Wilderness play function">
     <Title>
       The <Code inline inherit>play</Code> function
     </Title>
@@ -78,5 +79,15 @@ play(timeline, options)
     <p>
       None.
     </p>
+
+    <ButtonGroup>
+      <Link href="/getting-started/animate-a-shape" button primary>
+        Lesson: Animate a shape
+      </Link>
+
+      <Link href="/api/the-pause-function" button>
+        Next up: The pause function
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

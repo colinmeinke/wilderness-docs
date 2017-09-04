@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -5,7 +6,7 @@ import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
-  <Layout title="The Wilderness timeline function">
+  <Layout title="Wilderness timeline function">
     <Title>
       The <Code inline inherit>timeline</Code> function
     </Title>
@@ -120,5 +121,15 @@ timeline(shapeOrArray1, shapeOrArray2, ..., options)
     <p>
       A Timeline.
     </p>
+
+    <ButtonGroup>
+      <Link href="/getting-started/animate-a-shape" button primary>
+        Lesson: Animate a shape
+      </Link>
+
+      <Link href="/api/the-play-function" button>
+        Next up: The play function
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

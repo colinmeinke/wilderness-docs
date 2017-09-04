@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -5,7 +6,7 @@ import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
-  <Layout title="The Wilderness pause function">
+  <Layout title="Wilderness pause function">
     <Title>
       The <Code inline inherit>pause</Code> function
     </Title>
@@ -78,5 +79,11 @@ pause(timeline, options)
     <p>
       None.
     </p>
+
+    <ButtonGroup>
+      <Link href="/api/the-motionpath-function" button>
+        Next up: The motionPath function
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

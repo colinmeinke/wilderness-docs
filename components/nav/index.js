@@ -90,33 +90,22 @@ export default ({ handleFocus, handleRefresh, handleSwipe }) => {
               <Link
                 nav
                 subnav
-                href="/advanced-features/create-a-shape-from-an-existing-dom-node"
+                href="/advanced-features/create-a-shape-from-a-dom-node"
                 handleFocus={ handleFocus }
                 handleRefresh={ handleRefresh }
               >
-                Create a shape from an existing DOM node
+                Create a shape from a DOM node
               </Link>
             </li>
             <li>
               <Link
                 nav
                 subnav
-                href="/advanced-features/queuing-multiple-shapes-on-a-timeline"
+                href="/advanced-features/timeline-queuing"
                 handleFocus={ handleFocus }
                 handleRefresh={ handleRefresh }
               >
-                Queuing multiple shapes on a timeline
-              </Link>
-            </li>
-            <li>
-              <Link
-                nav
-                subnav
-                href="/advanced-features/updating-timeline-playback"
-                handleFocus={ handleFocus }
-                handleRefresh={ handleRefresh }
-              >
-                Updating timeline playback
+                Timeline queuing
               </Link>
             </li>
             <li>
@@ -128,6 +117,17 @@ export default ({ handleFocus, handleRefresh, handleSwipe }) => {
                 handleRefresh={ handleRefresh }
               >
                 Timeline events
+              </Link>
+            </li>
+            <li>
+              <Link
+                nav
+                subnav
+                href="/advanced-features/updating-timeline-playback"
+                handleFocus={ handleFocus }
+                handleRefresh={ handleRefresh }
+              >
+                Updating timeline playback
               </Link>
             </li>
             <li>

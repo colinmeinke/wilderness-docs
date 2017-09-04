@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -97,5 +98,11 @@ export default () => (
       <Link href="/api/the-pause-function">the <Code inline link>pause</Code> {' '}
       function</Link>.
     </p>
+
+    <ButtonGroup>
+      <Link href="/api/the-shape-function" button>
+        Next up: The shape function
+      </Link>
+    </ButtonGroup>
   </Layout>
 )

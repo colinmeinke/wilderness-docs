@@ -1,3 +1,4 @@
+import ButtonGroup from '../../components/button-group'
 import Code from '../../components/code'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
@@ -52,5 +53,11 @@ export default () => (
         😞 No error checks
       </li>
     </ul>
+
+    <ButtonGroup>
+      <Link href="/api" button>
+        Next up: API
+      </Link>
+    </ButtonGroup>
   </Layout>
 )
