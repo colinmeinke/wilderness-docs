@@ -10,7 +10,7 @@ export default () => (
     </Title>
 
     <p>
-      If you're into dry technical specifications, then you're in the right
+      If you're into dry technical specifications, then you've found the right
       section!
     </p>
 
