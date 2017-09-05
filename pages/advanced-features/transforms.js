@@ -17,9 +17,15 @@ export default () => (
     </Title>
 
     <p>
-      It is possible to transform shapes during {' '}
-      <Link href="/api/definitions#shape">Shape</Link> creation by seting a
-      {' '} <Code inline>transform</Code> property on a {' '}
+      It is possible to <Link href="#scale">scale</Link>, {' '}
+      <Link href="#offset">offset</Link> and <Link href="#rotate">rotate</Link>
+      {' '} shapes during <Link href="/api/definitions#shape">Shape</Link> {' '}
+      creation. We can even change the <Link href="#moveIndex">order</Link> and
+      {' '} <Link href="#reverse">direction</Link> of a shape's points.
+    </p>
+
+    <p>
+      To do this we set a <Code inline>transform</Code> property on the {' '}
       <Link href="/api/definitions#plain-shape-object">Plain Shape Object</Link>.
     </p>
 
