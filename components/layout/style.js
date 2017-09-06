@@ -29,7 +29,8 @@ const globalStyle = `
 
   span + p,
   h2 + p,
-  h2 + ul {
+  h2 + ul,
+  p + ul {
     margin-top: ${grid.baseline}px;
   }
 
