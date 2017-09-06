@@ -41,13 +41,13 @@ class ReverseExample extends Component {
       const arrowPath = ({ x, y, direction }) => {
         switch (direction) {
           case 'right':
-            return `M${x - 0.5} ${y - 1.25}l2.5 1.25l-2.5 1.25z`
+            return `M${x - 0.5} ${y - 1.25}l2.5 1.25l-2.5 1.25l0.5 -1.25z`
           case 'left':
-            return `M${x + 0.5} ${y - 1.25}l-2.5 1.25l2.5 1.25z`
+            return `M${x + 0.5} ${y - 1.25}l-2.5 1.25l2.5 1.25l-0.5 -1.25z`
           case 'down':
-            return `M${x - 1.25} ${y - 0.5}l1.25 2.5l1.25 -2.5z`
+            return `M${x - 1.25} ${y - 0.5}l1.25 2.5l1.25 -2.5l-1.25 0.5z`
           case 'up':
-            return `M${x - 1.25} ${y + 0.5}l1.25 -2.5l1.25 2.5z`
+            return `M${x - 1.25} ${y + 0.5}l1.25 -2.5l1.25 2.5l-1.25 -0.5z`
         }
       }
 

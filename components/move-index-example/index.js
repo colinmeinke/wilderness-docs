@@ -28,7 +28,7 @@ class MoveIndexExample extends Component {
         type: 'circle',
         cx: x,
         cy: y,
-        r: 1.2,
+        r: 1,
         fill: i === 0 ? '#1F9FFD' : '#34372F'
       }))
 
