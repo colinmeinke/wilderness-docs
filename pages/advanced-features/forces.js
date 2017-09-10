@@ -58,8 +58,9 @@ export default () => (
     <ol>
       <li>
         A Frame Shape &ndash; the data required to render a Shape. A Frame Shape
-        is calculated by tweening between two Keyframes. It takes the form of an
-        object that can contain three properties.
+        is calculated by tweening between two {' '}
+        <Link href="/api/definitions#keyframe">Keyframes</Link>. It takes the
+        form of an object that can contain three properties.
         <ol>
           <li>
             <Code inline>points</Code> &ndash; shape data as defined by {' '}
@@ -145,8 +146,7 @@ play(animation)
 
     <p>
       Notice in the example above that we add Forces to a Shape by defining a
-      {' '} <Code inline>forces</Code> array on the {' '}
-      <Link href="/api/definitions#keyframe">Keyframe</Link> we are tweening to.
+      {' '} <Code inline>forces</Code> array on the Keyframe we are tweening to.
     </p>
 
     <Subtitle>
