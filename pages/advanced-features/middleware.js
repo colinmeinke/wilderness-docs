@@ -6,7 +6,7 @@ import Subtitle from '../../components/subtitle'
 import Title from '../../components/title'
 
 export default () => (
-  <Layout title="Wilderness middleware">
+  <Layout title="Wilderness Middleware">
     <Title>
       Middleware
     </Title>
@@ -24,31 +24,31 @@ export default () => (
     </p>
 
     <p>
-      Enter middleware 💪.
+      Enter Middleware 💪.
     </p>
 
     <p>
-      In Wilderness, middleware is just a fancy way to say "some functions".
+      In Wilderness, Middleware is just a fancy way to say "some functions".
     </p>
 
     <p>
-      The role of each middleware is to turn non-numeric values (untweenable)
+      The role of each Middleware is to turn non-numeric values (untweenable)
       into numeric values (tweenable) before a tween is carried out. Then, after
       a tween has been performed, to return those values back to their initial
       format.
     </p>
 
     <p>
-      Wilderness ships with two middlewares.
+      Wilderness ships with two Middlewares.
     </p>
 
     <ul>
       <li>
-        🎨 Color middleware &ndash; allows for the tweening of color strings. e.g.
+        🎨 Color Middleware &ndash; allows for the tweening of color strings. e.g.
         {' '} <Code inline>#E54</Code>.
       </li>
       <li>
-        📐 Unit middleware &ndash; allows for the tweening of unit strings. e.g.
+        📐 Unit Middleware &ndash; allows for the tweening of unit strings. e.g.
         {' '} <Code inline>50px</Code>.
       </li>
     </ul>
@@ -59,7 +59,7 @@ export default () => (
     </p>
 
     <Subtitle>
-      Enable/disable middleware
+      Enable/disable Middleware
     </Subtitle>
 
     <p>
@@ -70,7 +70,7 @@ export default () => (
       <Link href="/api/the-timeline-function">The <Code inline>timeline</Code>
       {' '} function</Link> takes a final options argument. This options object
       can take an optional <Code inline>middleware</Code> property, whose value
-      is an array of middlewares to enable.
+      is an array of Middlewares to enable.
     </p>
 
     <Code>{`
@@ -82,31 +82,31 @@ const keyframe2 = { shape: 'circle', cx: 5, cy: 5, r: 3, fill: '#E54' }
 const morph = shape(keyframe1, keyframe2)
 
 const animation = timeline(morph, {
-  middleware: [ colorMiddleware ]
+  Middleware: [ colorMiddleware ]
 })
     `}</Code>
 
     <p>
       If no <Code inline>middleware</Code> property is defined then by default
-      both color and unit middleware will be enabled.
+      both color and unit Middleware will be enabled.
     </p>
 
     <p>
-      To remove these default middlewares we can simply pass an empty array to
+      To remove these default Middlewares we can simply pass an empty array to
       {' '} <Code inline>middleware</Code>.
     </p>
 
     <Subtitle>
-      Custom middleware
+      Custom Middleware
     </Subtitle>
 
     <p>
-      It's simple to create your own middleware and to enable it on a Timeline,
+      It's simple to create your own Middleware and to enable it on a Timeline,
       as show above.
     </p>
 
     <p>
-      Each middleware must have three named exports.
+      Each Middleware must have three named exports.
     </p>
 
     <ol>
@@ -125,8 +125,8 @@ const animation = timeline(morph, {
 
     <p>
       For a detailed example, take a look at how the built in {' '}
-      <Link href="https://github.com/colinmeinke/wilderness-core/blob/master/src/color-middleware.js">color
-      middleware</Link> works.
+      <Link href="https://github.com/colinmeinke/wilderness-core/blob/master/src/color-Middleware.js">Color
+      Middleware</Link> works.
     </p>
 
     <Subtitle>
@@ -134,14 +134,14 @@ const animation = timeline(morph, {
     </Subtitle>
 
     <p>
-      We mention above that middleware is used to transform non-numeric
+      We mention above that Middleware is used to transform non-numeric
       values to numeric values for tweening. However, there is no technical
-      reason as to why your middleware couldn't manipulate numeric values
+      reason as to why your Middleware couldn't manipulate numeric values
       instead.
     </p>
 
     <p>
-      Have a play and see what's the craziest use of middleware that you can
+      Have a play and see what's the craziest use of Middleware that you can
       come up with.
     </p>
 
