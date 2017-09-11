@@ -19,10 +19,13 @@ export default () => (
     </p>
 
     <p>
-      This is where Wilderness' flagship feature, {' '}
-      <Link href="/api/definitions#timeline">Timelines</Link>, comes into its
-      own. Timelines allow for complex queuing of Shapes in either sequence (one
-      after the other) or in parallel (alongside each other).
+      ⏱ <Link href="/api/definitions#timeline">Timeline</Link> queuing to the
+      rescue.
+    </p>
+
+    <p>
+      A Timeline allows for complex queuing of Shapes in sequence (one after the
+      other) or in parallel (alongside each other).
     </p>
 
     <p>
@@ -90,9 +93,7 @@ play(animation)
     <p>
       As well as Shapes, <Link href="/api/the-timeline-function">the {' '}
       <Code inline>timeline</Code> function</Link> can also accept arrays as
-      arguments. When passing an array argument to the {' '}
-      <Code inline>timeline</Code> function the first item should be a Shape,
-      and the second an options object.
+      arguments.
     </p>
 
     <Code>{`
@@ -103,20 +104,23 @@ timeline(
     `}</Code>
 
     <p>
+      When passing an array argument to the <Code inline>timeline</Code> {' '}
+      function, the first array item should be a Shape, and the second an
+      options object.
+    </p>
+
+    <p>
       This options object has two properties that can help with fine grain
       queue control &ndash; <Code inline>name</Code> (a string or a number) and
       {' '} <Code inline>queue</Code> (an object).
     </p>
 
     <p>
-      The <Code inline>name</Code> property creates a unique reference to a
-      Shape.
-    </p>
-
-    <p>
-      This unique <Code inline>name</Code> value can be referenced from another
-      Shape's <Code inline>queue.at</Code> or <Code inline>queue.after</Code>
-      {' '} properties.
+      The <Code inline>name</Code> property is a value we can use to reference
+      a Shape from another Shape. In the case of Timeline queuing, we can
+      reference the <Code inline>name</Code> value from another Shape's {' '}
+      <Code inline>queue.at</Code> or <Code inline>queue.after</Code> {' '}
+      properties.
     </p>
 
     <p>
@@ -128,14 +132,17 @@ timeline(
     <p>
       If neither the <Code inline>at</Code> nor <Code inline>after</Code> {' '}
       property is defined, the <Code inline>after</Code> property will be set to
-      reference the previous Shape in the Timeline. This is the reason why by
-      default Wilderness queues a Timeline in sequence.
+      reference the previous Shape in the Timeline. This is the reason why, by
+      default, Wilderness queues a Timeline in sequence.
     </p>
 
     <p>
       The final <Code inline>queue</Code> property to understand is {' '}
-      <Code inline>offset</Code>. This simply offsets the Shape from its
-      position in the Timeline by the defined number of milliseconds.
+      <Code inline>offset</Code>. This is a number that defines the milliseconds
+      to offset the Shape from its position on the Timeline. For example, a
+      queue object of <Code inline>{`{ at: 'SHAPE_X', offset: 200 }`}</Code>
+      {' '} means start playback 200 milliseconds after {' '}
+      <Code inline>SHAPE_X</Code> has started.
     </p>
 
     <Code>{`

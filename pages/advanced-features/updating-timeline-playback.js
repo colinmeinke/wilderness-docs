@@ -27,7 +27,8 @@ export default () => (
 
     <p>
       For example, this is how you would seek to 80% completion of a Timeline
-      (assigned to the variable <Code inline>animation</Code>).
+      (which, let's assume, is assigned to the variable {' '}
+      <Code inline>animation</Code>).
     </p>
 
     <Code>{`
