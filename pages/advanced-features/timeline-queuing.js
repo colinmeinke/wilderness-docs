@@ -14,15 +14,15 @@ export default () => (
     </Title>
 
     <p>
-      Often we need to animate more that one {' '}
-      <Link href="/api/definitions#shape">Shape</Link>.
+      Often, we need to animate more that one {' '}
+      <Link href="/api/definitions#shape">Shape</Link> at a time.
     </p>
 
     <p>
-      Fortunately for us, the Wilderness {' '}
-      <Link href="/api/definitions#timeline">Timeline</Link> allows for complex
-      queuing of Shapes in either sequence (one after the other) or in parallel
-      (alongside each other).
+      This is where Wilderness' flagship feature, {' '}
+      <Link href="/api/definitions#timeline">Timelines</Link>, comes into its
+      own. Timelines allow for complex queuing of Shapes in either sequence (one
+      after the other) or in parallel (alongside each other).
     </p>
 
     <p>

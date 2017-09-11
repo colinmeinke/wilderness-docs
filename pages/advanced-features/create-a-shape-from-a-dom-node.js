@@ -13,7 +13,7 @@ export default () => (
     </Title>
 
     <p>
-      Often, in the real world, we don't want to code our SVG shapes by hand.
+      Our SVG shapes can sometimes be too complex to code by hand.
     </p>
 
     <p>
