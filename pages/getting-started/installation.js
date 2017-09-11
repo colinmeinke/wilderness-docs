@@ -35,7 +35,7 @@ yarn add wilderness
     </p>
 
     <Code>{`
-npm --save wilderness
+npm install --save wilderness
     `}</Code>
 
     <p>
