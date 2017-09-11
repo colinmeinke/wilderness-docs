@@ -7,6 +7,14 @@ import style, { globalStyle } from './style'
 import ToggleNav from '../toggle-nav'
 import { withRouter } from 'next/router'
 
+const description = `
+  🎉 Small file size.
+  🌟 Simple, functional API.
+  🐣 Morph from anything, to anything.
+  ⏱️ Queue multiple animations on a timeline.
+  🚀 Powerful playback control
+`
+
 class Layout extends Component {
   constructor (props) {
     super(props)
@@ -63,14 +71,40 @@ class Layout extends Component {
       <div data-open={ this.state.navOpen }>
         <Head>
           <title>{ this.props.title }</title>
+
           <meta
             name="description"
-            content="An SVG animation API"
+            content="{ description }"
           />
+
+          <meta charset="utf-8" />
+          <meta name="author" content="Colin Meinke" />
+
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
+
+          <meta
+            property="og:type"
+            content="website"
+          />
+
+          <meta
+            property="og:site_name"
+            content="Wilderness"
+          />
+
+          <meta
+            property="og:title"
+            content="{ this.props.title }"
+          />
+
+          <meta
+            property="og:description"
+            content="{ description }"
+          />
+
           <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:400|Karla:400|Roboto+Mono:400"
             rel="stylesheet"

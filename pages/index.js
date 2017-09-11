@@ -8,7 +8,7 @@ import Subtitle from '../components/subtitle'
 import Title from '../components/title'
 
 export default () => (
-  <Layout title="Wilderness">
+  <Layout title="Wilderness &ndash; An SVG animation API">
     <Title>
       <strong>Wilderness</strong><br />
       an SVG animation API
