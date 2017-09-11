@@ -19,7 +19,7 @@ export default () => (
     </Subtitle>
 
     <ul>
-      <li>🎉 Small file size <small>(14.7kb minified + gzip)</small></li>
+      <li>🎉 Small file size <small>(15.1kb minified + gzip)</small></li>
       <li>🌟 Simple, functional API</li>
       <li>🐣 Morph from anything, to anything</li>
       <li>⏱️ Queue multiple animations on a timeline</li>
