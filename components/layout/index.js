@@ -74,7 +74,7 @@ class Layout extends Component {
 
           <meta
             name="description"
-            content="{ description }"
+            content={ description }
           />
 
           <meta charset="utf-8" />
@@ -97,12 +97,12 @@ class Layout extends Component {
 
           <meta
             property="og:title"
-            content="{ this.props.title }"
+            content={ this.props.title }
           />
 
           <meta
             property="og:description"
-            content="{ description }"
+            content={ description }
           />
 
           <link
