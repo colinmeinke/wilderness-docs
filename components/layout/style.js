@@ -23,8 +23,18 @@ const globalStyle = `
   h1 + p,
   p + p,
   hr + p,
-  ul + p {
+  ul + p,
+  h1 + h2 {
     margin-top: ${grid.baseline * 2}px;
+  }
+
+  p + h2,
+  ul + h2,
+  ol + h2,
+  div + h2,
+  span + h2,
+  svg + h2 {
+    margin-top: ${grid.baseline * 5}px;
   }
 
   span + p,

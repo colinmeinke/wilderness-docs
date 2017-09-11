@@ -7,8 +7,4 @@ export default `
     font-weight: normal;
     line-height: ${grid.baseline * 4}px;
   }
-
-  h2:not(:first-child) {
-    margin-top: ${grid.baseline * 5}px;
-  }
 `
