@@ -12,7 +12,7 @@ const description = `
   🌟 Simple, functional API.
   🐣 Morph from anything, to anything.
   ⏱️ Queue multiple animations on a timeline.
-  🚀 Powerful playback control
+  🚀 Powerful playback control.
 `
 
 class Layout extends Component {
