@@ -10,8 +10,12 @@ export default () => (
     </Title>
 
     <p>
-      If you're into dry technical specifications, then you've found the right
-      section!
+      🤓 It's API time, yay!
+    </p>
+
+    <p>
+      This section is a super boring technical reference. Don't expect to find
+      any jokes or cute emojis here.
     </p>
 
     <p>

@@ -101,8 +101,7 @@ const animation = timeline(morph, {
     </Subtitle>
 
     <p>
-      It's simple to create your own Middleware and to enable it on a Timeline,
-      as show above.
+      It's simple to create our own Middleware.
     </p>
 
     <p>
@@ -111,14 +110,14 @@ const animation = timeline(morph, {
 
     <ol>
       <li>
-        A unique <Code inline>name</Code> string.
+        <Code inline>name</Code> a unique string.
       </li>
       <li>
-        An <Code inline>input</Code> function &ndash; transform non-numeric
+        <Code inline>input</Code> a function that transforms non-numeric
         values to numeric values pre-tween.
       </li>
       <li>
-        An <Code inline>output</Code> function &ndash; revert transformed values
+        <Code inline>output</Code> a function that reverts transformed values
         back to their initial format post-tween.
       </li>
     </ol>
@@ -129,25 +128,11 @@ const animation = timeline(morph, {
       Middleware</Link> works.
     </p>
 
-    <Subtitle>
-      Experiment
-    </Subtitle>
-
     <p>
       We mention above that Middleware is used to transform non-numeric
       values to numeric values for tweening. However, there is no technical
-      reason as to why your Middleware couldn't manipulate numeric values
+      reason as to why our Middleware couldn't manipulate numeric values
       instead.
-    </p>
-
-    <p>
-      Have a play and see what's the craziest use of Middleware that you can
-      come up with.
-    </p>
-
-    <p>
-      Whatever you create {' '}
-      <Link href="https://twitter.com/colinmeinke">I'd love to know</Link>!
     </p>
 
     <ButtonGroup>

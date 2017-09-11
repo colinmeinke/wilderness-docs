@@ -18,8 +18,8 @@ export default () => (
     </p>
 
     <p>
-      If you remember from our Middleware lesson, Middleware is applied at the
-      {' '} <Link href="/api/definitions#timeline">Timeline</Link> level and
+      The previous lesson stated that Middleware is applied at the {' '}
+      <Link href="/api/definitions#timeline">Timeline</Link> level, and
       converts non-tweenable values (stings etc.) to tweenable values (numbers).
     </p>
 

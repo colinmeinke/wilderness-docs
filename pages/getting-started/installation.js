@@ -23,7 +23,7 @@ export default () => (
     </p>
 
     <p>
-      Get Wilderness by installing the npm distribution:
+      To get Wilderness we can install the npm distribution:
     </p>
 
     <Code>{`
@@ -39,8 +39,8 @@ npm --save wilderness
     `}</Code>
 
     <p>
-      Alternatively you can link to, or download, the distribution from
-      the <Link href="https://unpkg.com/wilderness-core/">unpkg CDN</Link>.
+      Alternatively we can link to (or download) the distribution from the {' '}
+      <Link href="https://unpkg.com/wilderness-core/">unpkg CDN</Link>.
     </p>
 
     <Subtitle id="es2015-module">
@@ -64,24 +64,23 @@ const { shape, timeline, render, play } = require('wilderness')
     </Subtitle>
 
     <p>
-      If you just want to drop a javascript file onto your page, then this is
-      the method for you.
+      It's also possible to just drop a javascript file onto our page.
     </p>
 
     <p>
-      Look in the <Code inline>dist</Code> directory of the distribution and
-      select either the {' '}
+      We can select either the {' '}
       <Link href="https://unpkg.com/wilderness/dist/wilderness.development.js">development</Link>
       {' '} or {' '}
       <Link href="https://unpkg.com/wilderness/dist/wilderness.production.js">production</Link>
-      {' '} file (see {' '}
-      <Link href="/advanced/development-v-production">development v
-      production</Link>).
+      {' '} file from the <Code inline>dist</Code> directory of the
+      distribution. To understand the difference between the two files see the
+      lesson <Link href="/advanced/development-v-production">development v
+      production</Link>.
     </p>
 
     <p>
-      Add a <Code inline>script</Code> tag linking to this file to your HTML
-      layout.
+      We then link to this file with a <Code inline>script</Code> tag in our
+      HTML layout.
     </p>
 
     <Code>{`
@@ -89,7 +88,7 @@ const { shape, timeline, render, play } = require('wilderness')
     `}</Code>
 
     <p>
-      You will then have access to the global <Code inline>Wilderness</Code>
+      We will then have access to the global <Code inline>Wilderness</Code>
       {' '} object.
     </p>
 

@@ -248,12 +248,12 @@ play(animation, playbackOptions)
 
     <p>
       That's the basics covered! I think we can all be pretty proud of
-      ourselves! Take some time to experiment with what you've learned.
+      ourselves! Take some time to experiment with what we've learned.
     </p>
 
     <p>
-      When you're ready to continue, we will learn just how powerful Wilderness
-      is, by exploring some of its advanced features.
+      When we're all ready to continue, we will learn just how powerful
+      Wilderness is, by exploring some of its advanced features.
     </p>
 
     <ButtonGroup>

@@ -95,9 +95,8 @@ render(document.querySelector('svg'), circle)
     <p>
       <Link href="/api/the-shape-function">The <Code inline link>shape</Code>
       {' '} function</Link> takes a final argument of options. One of these
-      options is the <Code inline>replace</Code> property. As you might guess,
-      this allows us to define a DOM node that the Shape will replace when
-      rendered.
+      options is the <Code inline>replace</Code> property. This allows us to
+      define a DOM node that the Shape will replace when rendered.
     </p>
 
     <Code>{`

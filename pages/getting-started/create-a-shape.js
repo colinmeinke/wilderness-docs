@@ -107,9 +107,8 @@ render(document.querySelector('svg'), circle)
     </p>
 
     <p>
-      You will notice that the <Code inline>render</Code> function's first
-      argument is a DOM node. This is the parent node to which we wish to append
-      our circle.
+      Notice that the <Code inline>render</Code> function's first argument is a
+      DOM node. This is the parent node to which we wish to append our circle.
     </p>
 
     <p>
