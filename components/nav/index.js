@@ -112,22 +112,22 @@ export default ({ handleFocus, handleRefresh, handleSwipe }) => {
               <Link
                 nav
                 subnav
-                href="/advanced-features/timeline-events"
+                href="/advanced-features/updating-timeline-playback"
                 handleFocus={ handleFocus }
                 handleRefresh={ handleRefresh }
               >
-                Timeline events
+                Updating timeline playback
               </Link>
             </li>
             <li>
               <Link
                 nav
                 subnav
-                href="/advanced-features/updating-timeline-playback"
+                href="/advanced-features/timeline-events"
                 handleFocus={ handleFocus }
                 handleRefresh={ handleRefresh }
               >
-                Updating timeline playback
+                Timeline events
               </Link>
             </li>
             <li>

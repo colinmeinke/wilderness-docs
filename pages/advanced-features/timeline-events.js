@@ -14,8 +14,8 @@ export default () => (
     </p>
 
     <ButtonGroup>
-      <Link href="/advanced-features/updating-timeline-playback" button>
-        Next lesson: Updating timeline playback
+      <Link href="/advanced-features/transforms" button>
+        Next lesson: Transforms
       </Link>
     </ButtonGroup>
   </Layout>
