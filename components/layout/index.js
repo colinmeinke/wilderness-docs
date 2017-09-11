@@ -64,6 +64,10 @@ class Layout extends Component {
         <Head>
           <title>{ this.props.title }</title>
           <meta
+            name="description"
+            content="An SVG animation API"
+          />
+          <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
