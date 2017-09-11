@@ -77,7 +77,8 @@ play(animation)
     </Subtitle>
 
     <p>
-      Published when playback hits the start of a Shape.
+      Published when playback hits the start of a {' '}
+      <Link href="/api/definitions#shape">Shape</Link>.
     </p>
 
     <p>
@@ -103,7 +104,8 @@ play(animation)
     </Subtitle>
 
     <p>
-      Published when playback hits a Shape Keyframe.
+      Published when playback hits a Shape {' '}
+      <Link href="/api/definitions#keyframe">Keyframe</Link>.
     </p>
 
     <p>
