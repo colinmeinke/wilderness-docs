@@ -107,7 +107,7 @@ class Layout extends Component {
 
           <meta
             name="twitter:image"
-            content="/static/logo.jpg"
+            content="https://wilderness.now.sh/static/logo.jpg"
           />
 
           <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
