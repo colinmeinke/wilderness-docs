@@ -1,0 +1,9 @@
+<svg width="16" height="16" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet">
+  <path d="M8,12V13L16,9V8Z" fill="#5B7722"></path>
+  <path d="M0,8V9L8,13V12Z" fill="#A5D742"></path>
+  <path d="M0,8L8,12L16,8L8,4Z" fill="#D9F2A6"></path>
+  <path d="M5,9L5.75,9.375L6.5,9L5.75,6Z" fill="#8AB82E"></path>
+  <path d="M4,8L4.5,8.25L5,8L4.5,6.5Z" fill="#5C7A1F"></path>
+  <path d="M11,8L11.5,8.25L12,8L11.5,6.5Z" fill="#597326"></path>
+  <path d="M9,5.5L9.5,5.75L10,5.5L9.5,4Z" fill="#86AC39"></path>
+</svg>

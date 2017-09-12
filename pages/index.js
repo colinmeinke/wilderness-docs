@@ -4,13 +4,14 @@ import { color, grid } from '../config/style'
 import HelloWorldExample from '../components/hello-world-example'
 import Layout from '../components/layout'
 import Link from '../components/link'
+import Logo from '../components/logo'
 import Subtitle from '../components/subtitle'
 import Title from '../components/title'
 
 export default () => (
   <Layout title="Wilderness &ndash; An SVG animation API">
     <Title>
-      <strong>Wilderness</strong><br />
+      <Logo />
       an SVG animation API
     </Title>
 
