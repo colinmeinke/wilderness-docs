@@ -30,10 +30,10 @@ const morph = shape(
   { el: document.querySelector('rect') },
 )
 
-const animation = timeline(morph)
-
-animation.event.subscribe('timeline.finish', () => {
-  alert('timeline finished')
+const animation = timeline(morph, {
+  events: [
+    [ 'timeline.finish', () => alert('timeline finished') ]
+  ]
 })
 
 render(document.querySelector('svg'), animation)
@@ -42,21 +42,20 @@ play(animation)
     `}</Code>
 
     <p>
-      In the example above we subscribe to the {' '}
-      <Code inline>timeline.finish</Code> event.
+      Timeline events are defined by passing an <Code inline>events</Code> {' '}
+      property to the options argument of {' '}
+      <Link href="/api/the-timeline-function">the <Code inline>timeline</Code>
+      {' '} function</Link>.
     </p>
 
     <p>
-      We do this by calling the <Code inline>subscribe</Code> function of the
-      {' '} <Code inline>event</Code> object that is exposed by a Timeline.
+      The <Code inline>events</Code> property value takes the form of an array
+      of events. Each event is itself an array, where the first item is the
+      event name, and the second argument is the callback function to run when
+      the event occurs.
     </p>
 
-    <p>
-      The <Code inline>subscribe</Code> function takes two arguments, an event
-      name, and a callback function.
-    </p>
-
-    <Subtitle>
+    <Subtitle id="event-names">
       The <Code inline inherit>timeline.start</Code> event
     </Subtitle>
 
@@ -82,8 +81,8 @@ play(animation)
     </p>
 
     <p>
-      The callback function will passed an object that includes a single
-      property &ndash; <Code inline>shapeName</Code>.
+      The callback function will be passed a single argument &ndash; {' '}
+      <Code inline>shapeName</Code>.
     </p>
 
     <Subtitle>
@@ -95,8 +94,8 @@ play(animation)
     </p>
 
     <p>
-      The callback function will passed an object that includes a single
-      property &ndash; <Code inline>shapeName</Code>.
+      The callback function will be passed a single argument &ndash; {' '}
+      <Code inline>shapeName</Code>.
     </p>
 
     <Subtitle>
@@ -109,9 +108,8 @@ play(animation)
     </p>
 
     <p>
-      The callback function will passed an object that includes two properties
-      &ndash; <Code inline>shapeName</Code> and {' '}
-      <Code inline>keyframeName</Code>.
+      The callback function will be passed two arguments &ndash; {' '}
+      <Code inline>shapeName</Code> and <Code inline>keyframeName</Code>.
     </p>
 
     <Subtitle>

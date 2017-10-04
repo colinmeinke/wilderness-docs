@@ -74,7 +74,7 @@ const { shape, timeline, render, play } = require('wilderness')
       <Link href="https://unpkg.com/wilderness/dist/wilderness.production.js">production</Link>
       {' '} file from the <Code inline>dist</Code> directory of the
       distribution. To understand the difference between the two files see the
-      lesson <Link href="/advanced/development-v-production">development v
+      lesson <Link href="/advanced-features/development-v-production">development v
       production</Link>.
     </p>
 

@@ -80,7 +80,7 @@ timeline(shapeOrArray1, shapeOrArray2, ..., options)
     </p>
 
     <p>
-      An object holding both playback options and middleware, where:
+      An object holding playback options, events and middleware, where:
     </p>
 
     <ul>
@@ -109,8 +109,23 @@ timeline(shapeOrArray1, shapeOrArray2, ..., options)
         start.
       </li>
       <li>
+        <Code inline>events</Code> <small>(optional)</small> is an array of {' '}
+        events, where each event is iteself an array, where:
+
+        <ul>
+          <li>
+            <Code inline>0</Code> is the {' '}
+            <Link href="/advanced-features/timeline-events#event-names">event
+            {' '}name</Link>.
+          </li>
+          <li>
+            <Code inline>1</Code> is the callback function.
+          </li>
+        </ul>
+      </li>
+      <li>
         <Code inline>middleware</Code> <small>(optional)</small> is an array of {' '}
-        <Link href="/advanced/middleware">Middleware</Link>.
+        <Link href="/advanced-features/middleware">Middleware</Link>.
       </li>
     </ul>
 
