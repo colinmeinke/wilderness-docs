@@ -1,6 +1,7 @@
+import css from 'styled-jsx/css'
 import { color, grid } from '../../config/style'
 
-export default `
+export default css`
   a {
     left: ${grid.gutter / 2}px;
     outline: none;

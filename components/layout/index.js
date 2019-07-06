@@ -3,7 +3,8 @@ import { Component } from 'react'
 import Footer from '../footer'
 import Head from 'next/head'
 import Nav from '../nav'
-import style, { globalStyle } from './style'
+import style from './style'
+import globalStyle from './globalStyle'
 import ToggleNav from '../toggle-nav'
 import { withRouter } from 'next/router'
 
@@ -77,7 +78,7 @@ class Layout extends Component {
             content={ description }
           />
 
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta name="author" content="Colin Meinke" />
 
           <meta
@@ -138,6 +139,7 @@ class Layout extends Component {
             </main>
           </div>
         </div>
+        
         <style jsx>{ style }</style>
         <style jsx global>{ globalStyle }</style>
         <script src="/static/wilderness.production.js"></script>

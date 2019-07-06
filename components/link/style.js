@@ -1,6 +1,7 @@
+import css from 'styled-jsx/css'
 import { border, breakpoint, color, font, grid } from '../../config/style'
 
-export default `
+export default css`
   a {
     cursor: pointer;
     font-size: inherit;

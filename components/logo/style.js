@@ -1,6 +1,7 @@
+import css from 'styled-jsx/css'
 import { border, color, grid } from '../../config/style'
 
-export default `
+export default css`
   div {
     display: flex;
   }

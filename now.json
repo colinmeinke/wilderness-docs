@@ -1,6 +1,8 @@
 {
-  "alias": [
-    "wilderness.now.sh"
-  ],
-  "name": "wilderness"
+  "version": 2,
+  "alias": "wilderness.now.sh",
+  "name": "wilderness",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
 }

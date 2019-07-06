@@ -1,6 +1,7 @@
+import css from 'styled-jsx/css'
 import { border, breakpoint, color, font, grid } from '../../config/style'
 
-export default `
+export default css`
   code,
   pre {
     border: 1px solid ${color.primary.alt};

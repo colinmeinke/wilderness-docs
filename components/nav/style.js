@@ -1,6 +1,7 @@
+import css from 'styled-jsx/css'
 import { breakpoint, color, font, grid } from '../../config/style'
 
-export default `
+export default css`
   nav {
     background-color: ${color.primary.contrast};
     box-shadow: -5px 0 5px hsla(0,0%,0%,0.2) inset;

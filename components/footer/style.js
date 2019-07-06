@@ -1,6 +1,7 @@
+import css from 'styled-jsx/css'
 import { font, grid } from '../../config/style'
 
-export default `
+export default css`
   footer {
     margin-top: ${grid.baseline * 15}px;
   }

@@ -6,15 +6,16 @@
   },
   "description": "Wilderness docs",
   "dependencies": {
-    "next": "^3.2.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "@now/static-build": "^0.6.2",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "license": "MIT",
   "name": "wilderness-docs",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export -o dist",
     "start": "next start"
   },
   "version": "0.0.0"

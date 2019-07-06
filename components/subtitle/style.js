@@ -1,6 +1,7 @@
+import css from 'styled-jsx/css'
 import { font, grid } from '../../config/style'
 
-export default `
+export default css`
   h2 {
     font-family: ${font.family.header};
     font-size: ${font.size.large}px;

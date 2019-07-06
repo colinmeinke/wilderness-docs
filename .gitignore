@@ -1,3 +1,4 @@
-.next/
-design.sketch
-node_modules/
+.DS_Store
+/.next
+/dist
+/node_modules
